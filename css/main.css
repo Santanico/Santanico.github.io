@@ -1926,7 +1926,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a61f9f;
+  background: #21e7eb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3007,10 +3007,4 @@ hr {
     width: auto;
     text-align: center;
   }
-}
-* {
-  cursor: url("/images/cat_cursor.ico"), auto !important;
-}
-:active {
-  cursor: url("/images/cat_cursor.ico"), auto !important;
 }
