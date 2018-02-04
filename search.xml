@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[welcome to Santanico's blog!]]></title>
-    <url>%2F2018%2F02%2F03%2Fwelcome-to-Santanico-s-blog%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[大一下 C语言作业合集(EX01-EX11)]]></title>
+    <url>%2F2018%2F02%2F05%2F%E5%A4%A7%E4%B8%80%E4%B8%8BC%E8%AF%AD%E8%A8%80%E4%BD%9C%E4%B8%9A%E4%BD%9C%E4%B8%9A%E5%90%88%E9%9B%86%2F</url>
+    <content type="text"><![CDATA[Hi, 由于文件存放年代久远，且我在当时学习过程中可能有改动，仅供参考。 EX011.Write a program that prints “This is my first program!” on the screen.(a)Save this program onto your own disk with the name of e2-1a;(b)Run this program without opening Turbo C;(c)Modify this program to print “This is my second program!”, then save it as e2-1b. Please do not overwrite the first program.12345678#include &lt;stdio.h&gt;int main ()&#123; printf("This is my first program!\n\n\n\n"); getchar(); return 0;&#125; 12345678#include &lt;stdio.h&gt;int main ()&#123; printf("This is my second program!\n\n\n\n"); getchar(); return 0;&#125; 2.Write a program that prints the number 1 to 4 on the same line. Write the program using the following methods:(a)Using four “printf” statements.(b)Using one “printf” statement with no conversion specifier (i.e. no ‘%’).(c)Using one “printf” statement with four conversion specifiers123456789101112131415161718#include&lt;stdio.h&gt;#include&lt;stdlib.h&gt;int main()&#123; printf("1 "); printf("2 "); printf("3 "); printf("4 \n");// the first four statements are as the teacher asked. printf("1 2 3 4\n");//the second statement is for "using one printf". int a=1,b=2,c=3,d=4; printf("%d %d %d %d \n",a,b,c,d);//the last statement is for conversion specifier. system ("pause");&#125; 3．(a) Write a program that calculates and displays the number of minutes in 15 days. (b) Write a program that calculates and displays how many hours 180 minutes equal to. (c) (Optional) How about 174 minutes?1234567891011121314#include&lt;stdio.h&gt;int main()&#123; int a, minutes; printf("Please input the number of days from 0-15 \n"); scanf("%d",&amp;a); minutes = a * 24 * 60 ; printf("the minutes is %d \n",minutes); getchar(); return 0; &#125; 1234567891011#include&lt;stdio.h&gt; int main()&#123; int a,hour; a = 180; hour = a / 60; printf("180 minutes equal to %d hours",hour); getchar(); return 0;&#125; 123456789101112#include&lt;stdio.h&gt; int main()&#123; int a; float hour; a = 174; hour = a / 60; printf("180 minutes equal to %f hours",hour); getchar(); return 0;&#125;]]></content>
+      <categories>
+        <category>Coding</category>
+      </categories>
+      <tags>
+        <tag>大一</tag>
+        <tag>C语言</tag>
+        <tag>Coursework</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
