@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Markdown语法基础与进阶]]></title>
     <url>%2F2018%2F02%2F07%2FMarkdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6%2F</url>
-    <content type="text"><![CDATA[Hexo写文章确实很好上手，但在新手(嗯，就是我)写文章的时候总会遇到一些特殊格式，或者引用资源之类的，让我拿着Notepad不知所措，比如一开始我po的几篇作业的题目中涉及一些带指数的公式之类的，我只能瑟瑟发抖拿^处理，那个时候遇见图片我就直接注释“图片参见课件”…… 昨天学了怎么插图片，但调整图片相关的属性还没写，打算一会更新到那篇教程的进阶里…… 基础篇在一开始看完官方写作文档Hexo Writing里最基础的内容+hello world之后，我就着急上手了，所以在前几篇文章里，我只实际应用了以下几个格式： 1.大标题： ## heading2.小标题： ### heading3.普通文本：plain text4.超链接： [text](url)5.代码块： &#96;&#96;&#96;//some code here&#96;&#96;&#96; 然而这在实际应用中肯定是不够的啊！所以今天来学习一下Markdown语法，相信写完这篇教程我就可以变身小达人了~进阶篇Hexo的文章是靠.md文件写入的，也就是Markdown，Markdown是一种标记语言（这是废话，你从名字就能看出来）说到这很多人会想起HTML(HyperText Mark-up Language),这大概是大家最先接触的一门标签/标记语言，简单说就是靠一堆标签来布置网页上的内容，之后我们又学了CSS(Cascading Style Sheets),也就是样式表，这货的出现是在HTML之后，为了补充更强大更复杂的样式功能，也为了把网页中的内容和样式分开来，可以看出来他们俩在一起越来越复杂化了；所以又出现了Markdown（我猜这个名字就是为了和HTML的Markup做区分来的），这是一个清爽简单版，所见即所得的标记语言，没有复杂的标签和属性，只需要在文本上加几个符号之类的，而各位用Hexo的很重要的一个原因就是简洁、方便、流畅，那么为啥Hexo要用Markdown也就可想而知啦（当然啦Markdown也是兼容HTML的，所以你在文章里用标签也没问题）。在想想Servlet和JSP的关系，哎呀这不就是HTML和Markdown的关系吗！为了化繁为简，专门给我这种懒蛋+小白设计的。不信你看，你写好的文章部署完了之后，打开页面，右键查看源代码，不还是HTML吗？！哈哈哈 “Markdown 从来都不是用来替代 HTML的，更不是用于前端开发、写完整页面的。Markdown的设计目的是方便写作的时候，标记格式、同时使标记格式后的纯文本，比起 HTML 源码，更有可读性。Markdown 的呈现需要解析成HTML, 而其支持的 HTML 标记也只是一部分。从这个角度看， Markdown 可算是 HTML 的一个简化了标记形式的子集。” 标题 Markdown支持共六级标题，语法如下：123# 第一级标题## 第二级标题###### 第六级标题 强调12345*这些文字会生成&lt;em&gt;的效果*_这些文字会生成&lt;u&gt;的效果_**这些文字会生成&lt;strong&gt;效果**__这些文字会生成&lt;strong&gt;的效果__ 效果如下：这些文字会生成&lt;em&gt;的效果这些文字会生成&lt;u&gt;的效果这些文字会生成&lt;strong&gt;效果这些文字会生成&lt;strong&gt;的效果 换行四个及以上的空格加回车。（这个还真不如直接用HTML简单） 无序列表1234567* 项目一 无序列表 * 项目二 * 项目二的子项目一 无序列表 * 项目二的子项目二即：*+空格+项目TAB+*+空格+子项目 效果如下： 项目一 无序列表 项目二 项目二的子项目一 项目二的子项目二 有序列表语法如下：123456781. 项目一 有序列表 2. 项目二 3. 项目三 1. 项目三的子项目一 2. 项目三的子项目二即：数字+.+空格+项目TAB+数字+.+空格+子项目 效果如下： 项目一 有序列表 项目二 项目三 项目三的子项目一 项目三的子项目二 任务列表语法如下（中括号内为字母x）：12- [ ] 任务一 未做任务 - [x] 任务二 已做任务 效果如下： 任务一 未做任务 任务二 已做任务 图片语法如下：1![title text](url) 关于插入图片的详情请查看另一篇文章：如何在.md文件中插入图片 链接语法如下：123456文本链接：[text](url)自动生成链接：&lt;url&gt;例：email &lt;example@example.com&gt;[GitHub](http://github.com)自动生成连接 &lt;http://www.github.com/&gt; 效果如下：email &#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#64;&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#109;GitHub自动生成连接 http://www.github.com/ 引用语法如下：12&gt; 第一行引用文字&gt; 第二行引用文字 效果如下： 第一行引用文字第二行引用文字 行内代码语法如下：1`code here` 代码块语法如下： &#96;&#96;&#96;+language //some code here &#96;&#96;&#96; 效果：就是以上所有的语法块~ 1printf("hello world"); 流程图 需要先安装相关插件 1npm install --save hexo-filter-flowchart 语法如下： &#96;&#96;&#96;flow st=&gt;start: Startop=&gt;operation: Your Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&#96;&#96;&#96; 效果如下： 表格语法如下：1234第一格表头 | 第二格表头--------- | -------------内容单元格 第一列第一格 | 内容单元格第二列第一格内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格 效果如下：第一格表头 | 第二格表头——— | ————-内容单元格 第一列第一格 | 内容单元格第二列第一格内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格 删除线语法如下：1~~需要加删除线的内容~~ 效果如下：需要加删除线的内容 分割线语法如下：123********- - - 效果如下： 简单公式需要先打开主题的配置文件，修改相关项：12mathjax: enable: true 语法如下：1$$E=mc^2$$ 效果如下：$$E=mc^2$$ 脚注需要先安装相关插件1npm install hexo-footnotes --save 打开主题的配置文件，启用插件：12plugins: - hexo-footnotes 语法如下：12345678910basic footnote[^1]here is an inline footnote[^2](inline footnote)and another one[^3]and another one[^4][^1]: basic footnote content[^3]: paragraphfootnotecontent[^4]: footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown) 效果如下：basic footnote1here is an inline footnote2and another one3and another one4 好啦，大概就是这些。 st=>start: Start op=>operation: Your Operation cond=>condition: Yes or No? e=>end st->op->cond cond(yes)->e cond(no)->op{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);1.basic footnote content ↩2.inline footnote ↩3.paragraphfootnotecontent ↩4.footnote content with some markdown ↩]]></content>
+    <content type="text"><![CDATA[Hexo写文章确实很好上手，但在新手(嗯，就是我)写文章的时候总会遇到一些特殊格式，或者引用资源之类的，让我拿着Notepad不知所措，比如一开始我po的几篇作业的题目中涉及一些带指数的公式之类的，我只能瑟瑟发抖拿^处理，那个时候遇见图片我就直接注释“图片参见课件”…… 昨天学了怎么插图片，但调整图片相关的属性还没写，打算一会更新到那篇教程的进阶里…… 基础篇在一开始看完官方写作文档Hexo Writing里最基础的内容+hello world之后，我就着急上手了，所以在前几篇文章里，我只实际应用了以下几个格式： 1.大标题： ## heading2.小标题： ### heading3.普通文本：plain text4.超链接： [text](url)5.代码块： &#96;&#96;&#96;//some code here&#96;&#96;&#96; 然而这在实际应用中肯定是不够的啊！所以今天来学习一下Markdown语法，相信写完这篇教程我就可以变身小达人了~进阶篇Hexo的文章是靠.md文件写入的，也就是Markdown，Markdown是一种标记语言（这是废话，你从名字就能看出来）说到这很多人会想起HTML(HyperText Mark-up Language),这大概是大家最先接触的一门标签/标记语言，简单说就是靠一堆标签来布置网页上的内容，之后我们又学了CSS(Cascading Style Sheets),也就是样式表，这货的出现是在HTML之后，为了补充更强大更复杂的样式功能，也为了把网页中的内容和样式分开来，可以看出来他们俩在一起越来越复杂化了；所以又出现了Markdown（我猜这个名字就是为了和HTML的Markup做区分来的），这是一个清爽简单版，所见即所得的标记语言，没有复杂的标签和属性，只需要在文本上加几个符号之类的，而各位用Hexo的很重要的一个原因就是简洁、方便、流畅，那么为啥Hexo要用Markdown也就可想而知啦（当然啦Markdown也是兼容HTML的，所以你在文章里用标签也没问题）。在想想Servlet和JSP的关系，哎呀这不就是HTML和Markdown的关系吗！为了化繁为简，专门给我这种懒蛋+小白设计的。不信你看，你写好的文章部署完了之后，打开页面，右键查看源代码，不还是HTML吗？！哈哈哈 “Markdown 从来都不是用来替代 HTML的，更不是用于前端开发、写完整页面的。Markdown的设计目的是方便写作的时候，标记格式、同时使标记格式后的纯文本，比起 HTML 源码，更有可读性。Markdown 的呈现需要解析成HTML, 而其支持的 HTML 标记也只是一部分。从这个角度看， Markdown 可算是 HTML 的一个简化了标记形式的子集。” 标题 Markdown支持共六级标题，语法如下：123# 第一级标题## 第二级标题###### 第六级标题 强调12345*这些文字会生成&lt;em&gt;的效果*_这些文字会生成&lt;u&gt;的效果_**这些文字会生成&lt;strong&gt;效果**__这些文字会生成&lt;strong&gt;的效果__ 效果如下：这些文字会生成&lt;em&gt;的效果这些文字会生成&lt;u&gt;的效果这些文字会生成&lt;strong&gt;效果这些文字会生成&lt;strong&gt;的效果 换行四个及以上的空格加回车。（这个还真不如直接用HTML简单） 无序列表1234567* 项目一 无序列表 * 项目二 * 项目二的子项目一 无序列表 * 项目二的子项目二即：*+空格+项目TAB+*+空格+子项目 效果如下： 项目一 无序列表 项目二 项目二的子项目一 项目二的子项目二 有序列表语法如下：123456781. 项目一 有序列表 2. 项目二 3. 项目三 1. 项目三的子项目一 2. 项目三的子项目二即：数字+.+空格+项目TAB+数字+.+空格+子项目 效果如下： 项目一 有序列表 项目二 项目三 项目三的子项目一 项目三的子项目二 任务列表语法如下（中括号内为字母x）：12- [ ] 任务一 未做任务 - [x] 任务二 已做任务 效果如下： 任务一 未做任务 任务二 已做任务 图片语法如下：1![title text](url) 关于插入图片的详情请查看另一篇文章：如何在.md文件中插入图片 链接语法如下：123456文本链接：[text](url)自动生成链接：&lt;url&gt;例：email &lt;example@example.com&gt;[GitHub](http://github.com)自动生成连接 &lt;http://www.github.com/&gt; 效果如下：email &#101;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#x63;&#111;&#109;GitHub自动生成连接 http://www.github.com/ 引用语法如下：12&gt; 第一行引用文字&gt; 第二行引用文字 效果如下： 第一行引用文字第二行引用文字 行内代码语法如下：1`code here` 代码块语法如下： &#96;&#96;&#96;+language //some code here &#96;&#96;&#96; 效果：就是以上所有的语法块~ 1printf("hello world"); 流程图 需要先安装相关插件 1npm install --save hexo-filter-flowchart 语法如下： &#96;&#96;&#96;flow st=&gt;start: Startop=&gt;operation: Your Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&#96;&#96;&#96; 效果如下： 表格语法如下：1234第一格表头 | 第二格表头--------- | -------------内容单元格 第一列第一格 | 内容单元格第二列第一格内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格 删除线语法如下：1~~需要加删除线的内容~~ 效果如下：需要加删除线的内容 分割线语法如下：123********- - - 效果如下： 简单公式需要先打开主题的配置文件，修改相关项：12mathjax: enable: true 语法如下：1$$E=mc^2$$ 效果如下：$$E=mc^2$$ 脚注需要先安装相关插件1npm install hexo-footnotes --save 打开主题的配置文件，启用插件：12plugins: - hexo-footnotes 语法如下：12345678910basic footnote[^1]here is an inline footnote[^2](inline footnote)and another one[^3]and another one[^4][^1]: basic footnote content[^3]: paragraphfootnotecontent[^4]: footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown) 效果如下：basic footnote1here is an inline footnote2and another one3and another one4 好啦，大概就是这些。 后续实际上学完这些之后，我还是下载了三个Markdown编辑器……分别是：Cmd Markdown两侧对照式，一侧编辑区，一侧效果展示，跟Dreamweaver是的，看起来还不错。Typora界面非常美观，所见即所得，输入完（也可以偷懒点选项键）就会自动变成想要的格式，但是格式一复杂很容易出错，而且它自动乱加格式，查了一下好像不光我有这个问题。MarkDownEditor听说是很官方的编辑器，可是外观像Win 8似的，看了一下功能和Cmd Markdown一样，就没尝试…… st=>start: Start op=>operation: Your Operation cond=>condition: Yes or No? e=>end st->op->cond cond(yes)->e cond(no)->op{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);1.basic footnote content ↩2.inline footnote ↩3.paragraphfootnotecontent ↩4.footnote content with some markdown ↩]]></content>
       <categories>
         <category>Posting</category>
       </categories>
@@ -30,8 +30,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>大二</tag>
         <tag>C语言</tag>
+        <tag>大二</tag>
         <tag>数据结构</tag>
       </tags>
   </entry>
@@ -43,8 +43,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>大二</tag>
         <tag>C语言</tag>
+        <tag>大二</tag>
         <tag>数据结构</tag>
       </tags>
   </entry>
@@ -56,8 +56,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>大二</tag>
         <tag>C语言</tag>
+        <tag>大二</tag>
         <tag>数据结构</tag>
       </tags>
   </entry>
@@ -69,8 +69,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>大二</tag>
         <tag>C语言</tag>
+        <tag>大二</tag>
         <tag>数据结构</tag>
       </tags>
   </entry>
@@ -82,8 +82,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>大二</tag>
         <tag>C语言</tag>
+        <tag>大二</tag>
         <tag>数据结构</tag>
       </tags>
   </entry>
@@ -95,8 +95,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>C语言</tag>
         <tag>大一</tag>
+        <tag>C语言</tag>
         <tag>Coursework</tag>
       </tags>
   </entry>
@@ -108,8 +108,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>C语言</tag>
         <tag>大一</tag>
+        <tag>C语言</tag>
         <tag>Coursework</tag>
       </tags>
   </entry>
