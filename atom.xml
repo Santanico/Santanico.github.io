@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-02-07T06:23:46.790Z</updated>
+  <updated>2018-02-07T08:05:39.615Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown语法基础与进阶</title>
+    <link href="http://Santanico.github.io/2018/02/07/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/"/>
+    <id>http://Santanico.github.io/2018/02/07/Markdown语法基础与进阶/</id>
+    <published>2018-02-07T07:20:21.000Z</published>
+    <updated>2018-02-07T08:05:39.615Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  &lt;code&gt;Hexo&lt;/code&gt;写文章确实很好上手，但在新手(嗯，就是我)写文章的时候总会遇到一些特殊格式，或者引用资源之类的，让我拿着&lt;code&gt;Notepad&lt;/code&gt;不知所措，比如一开始我po的几篇作业的题目中涉及一些带指数的公式之类的，我只能瑟瑟发抖拿&lt;code&gt;^&lt;/code&gt;处理，那个时候遇见图片我就直接注释“图片参见课件”…… 昨天学了怎么插图片，但调整图片相关的属性还没写，打算一会更新到那篇教程的&lt;strong&gt;进阶&lt;/strong&gt;里……&lt;/p&gt;
+&lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;p&gt;  在一开始看完官方写作文档&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo Writing&lt;/a&gt;里最基础的内容之后，我就着急上手了，所以在前几篇文章里，我只实际应用了以下几个格式：&lt;/p&gt;
+&lt;h2 id=&quot;大标题&quot;&gt;&lt;a href=&quot;#大标题&quot; class=&quot;headerlink&quot; title=&quot;大标题&quot;&gt;&lt;/a&gt;大标题&lt;/h2&gt;&lt;p&gt;1.（大标题：## heading）&lt;/p&gt;
+&lt;h3 id=&quot;小标题&quot;&gt;&lt;a href=&quot;#小标题&quot; class=&quot;headerlink&quot; title=&quot;小标题&quot;&gt;&lt;/a&gt;小标题&lt;/h3&gt;&lt;p&gt;2.（小标题：### heading）&lt;/p&gt;
+&lt;p&gt;正文&lt;br&gt;3.（普通文本：plain text）&lt;/p&gt;
+&lt;p&gt;超链接到：&lt;a href=&quot;http://www.hanxueying.com/2018/02/06/如何在-md文章中插入图片/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;如何在.md中插入图片&lt;/a&gt;&lt;br&gt;4.（超链接：&lt;code&gt;[text](url)&lt;/code&gt;）&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;//some code here&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;5.（代码块：coding between```）&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Posting" scheme="http://Santanico.github.io/categories/Posting/"/>
+    
+    
+      <category term="hexo" scheme="http://Santanico.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何在.md文章中插入图片</title>
     <link href="http://Santanico.github.io/2018/02/06/%E5%A6%82%E4%BD%95%E5%9C%A8-md%E6%96%87%E7%AB%A0%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
     <id>http://Santanico.github.io/2018/02/06/如何在-md文章中插入图片/</id>
     <published>2018-02-06T14:16:39.000Z</published>
-    <updated>2018-02-07T06:23:46.790Z</updated>
+    <updated>2018-02-07T06:41:55.598Z</updated>
     
     <summary type="html">
     
@@ -55,9 +82,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -81,9 +108,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -106,9 +133,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -131,9 +158,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -157,9 +184,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -184,9 +211,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="Coursework" scheme="http://Santanico.github.io/tags/Coursework/"/>
     
@@ -209,9 +236,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="Coursework" scheme="http://Santanico.github.io/tags/Coursework/"/>
     
