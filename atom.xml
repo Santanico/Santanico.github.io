@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-02-07T12:42:28.719Z</updated>
+  <updated>2018-02-28T08:45:32.400Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://Santanico.github.io/2018/02/07/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/"/>
     <id>http://Santanico.github.io/2018/02/07/Markdown语法基础与进阶/</id>
     <published>2018-02-07T07:20:21.000Z</published>
-    <updated>2018-02-07T12:42:28.719Z</updated>
+    <updated>2018-02-28T08:45:32.400Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;  &lt;code&gt;Hexo&lt;/code&gt;写文章确实很好上手，但在新手(嗯，就是我)写文章的时候总会遇到一些特殊格式，或者引用资源之类的，让我拿着&lt;code&gt;Notepad&lt;/code&gt;不知所措，比如一开始我po的几篇作业的题目中涉及一些带指数的公式之类的，我只能瑟瑟发抖拿&lt;code&gt;^&lt;/code&gt;处理，那个时候遇见图片我就直接注释“图片参见课件”……&lt;br&gt;  昨天学了怎么插图片，但调整图片相关的属性还没写，打算一会更新到那篇教程的&lt;strong&gt;进阶&lt;/strong&gt;里……&lt;/p&gt;
-&lt;div class=&quot;note default&quot;&gt;&lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;p&gt;在一开始看完官方写作文档&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo Writing&lt;/a&gt;里最基础的内容+&lt;code&gt;hello world&lt;/code&gt;之后，我就着急上手了，所以在前几篇文章里，我只实际应用了以下几个格式：&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;note default&quot;&gt;&lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;p&gt;在一开始看完官方写作文档&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo Writing&lt;/a&gt;里最基础的内容 + hello world之后，我就着急上手了，所以在前几篇文章里，我只实际应用了以下几个格式：&lt;/p&gt;&lt;/div&gt;
 &lt;p&gt;1.大标题：  &lt;code&gt;## heading&lt;/code&gt;&lt;br&gt;2.小标题：  &lt;code&gt;### heading&lt;/code&gt;&lt;br&gt;3.普通文本：&lt;code&gt;plain text&lt;/code&gt;&lt;br&gt;4.超链接：  &lt;code&gt;[text](url)&lt;/code&gt;&lt;br&gt;5.代码块：  &lt;code&gt;&amp;#96;&amp;#96;&amp;#96;//some code here&amp;#96;&amp;#96;&amp;#96;&lt;/code&gt;&lt;br&gt;
     
     </summary>
