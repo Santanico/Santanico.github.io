@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Santanico&#39;s Blog">
 <meta property="og:description" content="Hexo写文章确实很好上手，但在新手(嗯，就是我)写文章的时候总会遇到一些特殊格式，或者引用资源之类的，让我拿着Notepad不知所措，比如一开始我po的几篇作业的题目中涉及一些带指数的公式之类的，我只能瑟瑟发抖拿^处理，那个时候遇见图片我就直接注释“图片参见课件”……  昨天学了怎么插图片，但调整图片相关的属性还没写，打算一会更新到那篇教程的进阶里…… 基础篇在一开始看完官方写作文档Hexo">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-02-28T08:45:32.400Z">
+<meta property="og:updated_time" content="2018-02-28T08:51:33.581Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法基础与进阶">
 <meta name="twitter:description" content="Hexo写文章确实很好上手，但在新手(嗯，就是我)写文章的时候总会遇到一些特殊格式，或者引用资源之类的，让我拿着Notepad不知所措，比如一开始我po的几篇作业的题目中涉及一些带指数的公式之类的，我只能瑟瑟发抖拿^处理，那个时候遇见图片我就直接注释“图片参见课件”……  昨天学了怎么插图片，但调整图片相关的属性还没写，打算一会更新到那篇教程的进阶里…… 基础篇在一开始看完官方写作文档Hexo">
@@ -491,7 +491,7 @@
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![title text](url)</span><br></pre></td></tr></table></figure></p>
 <p>关于插入图片的详情请查看另一篇文章：<a href="http://www.hanxueying.com/2018/02/06/%E5%A6%82%E4%BD%95%E5%9C%A8-md%E6%96%87%E7%AB%A0%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">如何在.md文件中插入图片</a></p>
 <h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">文本链接：[text](url)</span><br><span class="line">自动生成链接：&lt;url&gt;</span><br><span class="line">例：</span><br><span class="line">email &lt;example@example.com&gt;</span><br><span class="line">[GitHub](http://github.com)</span><br><span class="line">自动生成连接  &lt;http://www.github.com/&gt;</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：<br>email <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#64;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#x6f;&#109;">&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#64;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#x6f;&#109;</a><br><a href="http://github.com" target="_blank" rel="noopener">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="noopener">http://www.github.com/</a></p>
+<p>效果如下：<br>email <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a><br><a href="http://github.com" target="_blank" rel="noopener">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="noopener">http://www.github.com/</a></p>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 第一行引用文字</span><br><span class="line">&gt; 第二行引用文字</span><br></pre></td></tr></table></figure></p>
 <p>效果如下：</p>
 <blockquote>
@@ -517,14 +517,10 @@
 <p>语法如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">basic footnote[^<span class="number">1</span>]</span><br><span class="line">here is an <span class="keyword">inline</span> footnote[^<span class="number">2</span>](<span class="keyword">inline</span> footnote)</span><br><span class="line"><span class="keyword">and</span> another one[^<span class="number">3</span>]</span><br><span class="line"><span class="keyword">and</span> another one[^<span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">[^<span class="number">1</span>]: basic footnote content</span><br><span class="line">[^<span class="number">3</span>]: paragraph</span><br><span class="line">footnote</span><br><span class="line">content</span><br><span class="line">[^<span class="number">4</span>]: footnote content with some [markdown](https:<span class="comment">//en.wikipedia.org/wiki/Markdown)</span></span><br></pre></td></tr></table></figure></p>
 <p>效果如下：<br>basic footnote<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><br>here is an inline footnote<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br>and another one<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup><br>and another one<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
 <p>好啦，大概就是这些。</p>
-<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><ol>
-<li>实际上学完这些之后，我还是下载了三个<code>Markdown</code>编辑器……分别是：</li>
-</ol>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>1.实际上学完这些之后，我还是下载了三个<code>Markdown</code>编辑器……分别是：</p>
 <p><strong>Cmd Markdown</strong>两侧对照式，一侧编辑区，一侧效果展示，跟Dreamweaver是的，看起来还不错。<br><strong>Typora</strong>界面非常美观，所见即所得，输入完（也可以偷懒点选项键）就会自动变成想要的格式，但是格式一复杂很容易出错，而且它自动乱加格式，查了一下好像不光我有这个问题。<br><strong>MarkDownEditor</strong>听说是很官方的编辑器，可是外观像<code>Win 8</code>似的，看了一下功能和<code>Cmd Markdown</code>一样，就没尝试……</p>
-<ol>
-<li>我在整理这篇教程的时候，那些语法是靠代码块来注释转义的，毕竟Markdown没有转义这么一说，然而我发现有一些插件支持的markdown语法太强了，强到就算考代码块注释都会被识别出来显示出格式，比如脚注的语法，就算注释进代码块，还是会显示出来，最后发现了解决办法是给代码块指定一个语言，比如我指定的语言是C，它就按照C语言的标准解析出各部分的颜色，虽然语法莫名其妙变得花花绿绿，但总算不会出现代码块里搀着显示出来的语法格式的问题了。</li>
-<li>看了一些文档，原来Markdown的格式也可以自己改代码设定的，看了一位前辈改的还蛮好看蛮有风格，我这种又懒又强迫症又容易一改改几天的人就不尝试了，大家可以改成自己的风格玩玩~</li>
-</ol>
+<p>2.我在整理这篇教程的时候，那些语法是靠代码块来注释转义的，毕竟Markdown没有转义这么一说，然而我发现有一些插件支持的markdown语法太强了，强到就算考代码块注释都会被识别出来显示出格式，比如脚注的语法，就算注释进代码块，还是会显示出来，最后发现了解决办法是给代码块指定一个语言，比如我指定的语言是C，它就按照C语言的标准解析出各部分的颜色，虽然语法莫名其妙变得花花绿绿，但总算不会出现代码块里搀着显示出来的语法格式的问题了。</p>
+<p>3.看了一些文档，原来Markdown的格式也可以自己改代码设定的，看了一位前辈改的还蛮好看蛮有风格，我这种又懒又强迫症又容易一改改几天的人就不尝试了，大家可以改成自己的风格玩玩~</p>
 <p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start
 op=>operation: Your Operation
 cond=>condition: Yes or No?
@@ -592,6 +588,10 @@ cond(no)->op</textarea><textarea id="flowchart-0-options" style="display: none">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/28/iPhone换电池续命全攻略/" rel="prev" title="iPhone换电池续命全攻略">
+                iPhone换电池续命全攻略 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -701,7 +701,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -712,7 +712,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -868,7 +868,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count"> |  Word Count: 16.0k words</span>
+  <span class="post-count"> |  Word Count: 17.9k words</span>
 </div>
 
         

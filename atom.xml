@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-02-28T08:45:32.400Z</updated>
+  <updated>2018-02-28T10:36:39.490Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>iPhone换电池续命全攻略</title>
+    <link href="http://Santanico.github.io/2018/02/28/iPhone%E6%8D%A2%E7%94%B5%E6%B1%A0%E7%BB%AD%E5%91%BD%E5%85%A8%E6%94%BB%E7%95%A5/"/>
+    <id>http://Santanico.github.io/2018/02/28/iPhone换电池续命全攻略/</id>
+    <published>2018-02-28T08:52:15.000Z</published>
+    <updated>2018-02-28T10:36:39.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;升级iOS时，为了防止设备意外关闭，如果iPhone安装的电池比较老旧，苹果会对处理器速度进行限制，从而导致iPhone性能下降。前不久，苹果承认iOS系统更新会降低旧版iPhone的运行速度，大批消费者谴责苹果之所以故意压低iPhone性能，其实是想引诱用户早早升级设备，
+        
+      
+    
+    </summary>
+    
+      <category term="Living" scheme="http://Santanico.github.io/categories/Living/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Markdown语法基础与进阶</title>
     <link href="http://Santanico.github.io/2018/02/07/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/"/>
     <id>http://Santanico.github.io/2018/02/07/Markdown语法基础与进阶/</id>
     <published>2018-02-07T07:20:21.000Z</published>
-    <updated>2018-02-28T08:45:32.400Z</updated>
+    <updated>2018-02-28T08:51:33.581Z</updated>
     
     <summary type="html">
     
@@ -77,9 +101,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -103,9 +127,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -128,9 +152,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -153,9 +177,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -179,9 +203,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -206,9 +230,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
     
       <category term="Coursework" scheme="http://Santanico.github.io/tags/Coursework/"/>
     
@@ -231,9 +255,9 @@
       <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
     
     
-      <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
-    
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
     
       <category term="Coursework" scheme="http://Santanico.github.io/tags/Coursework/"/>
     
