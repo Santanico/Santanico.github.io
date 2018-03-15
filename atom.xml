@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Santanico&#39;s Blog</title>
+  <title>Xueying&#39;s Blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-03-15T11:18:44.530Z</updated>
+  <updated>2018-03-15T12:42:54.016Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -17,16 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>java</title>
+    <title>Java Lab3</title>
     <link href="http://Santanico.github.io/2018/03/15/Java%20Lab3/"/>
     <id>http://Santanico.github.io/2018/03/15/Java Lab3/</id>
     <published>2018-03-15T11:18:44.000Z</published>
-    <updated>2018-03-15T11:18:44.530Z</updated>
+    <updated>2018-03-15T12:42:54.016Z</updated>
     
     <summary type="html">
     
+      &lt;div class=&quot;note default&quot;&gt;&lt;h3 id=&quot;参考书资源&quot;&gt;&lt;a href=&quot;#参考书资源&quot; class=&quot;headerlink&quot; title=&quot;参考书资源&quot;&gt;&lt;/a&gt;参考书资源&lt;/h3&gt;&lt;p&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1Fc97VROtQv2wBrZD94iCMA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1Fc97VROtQv2wBrZD94iCMA&lt;/a&gt; 密码：2fp5&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;不嫌麻烦的同学可以文末通过JiaThis分享出去，让更多的人看到这份资源，也能给我增加一下访问量。&lt;/p&gt;
+    
     </summary>
     
+      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
+    
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="Java" scheme="http://Santanico.github.io/tags/Java/"/>
     
   </entry>
   
