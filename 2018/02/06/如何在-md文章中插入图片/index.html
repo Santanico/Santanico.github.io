@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://santanico.github.io/2018/02/06/如何在-md文章中插入图片/1202495.png">
 <meta property="og:image" content="http://santanico.github.io/2018/02/06/如何在-md文章中插入图片/1202495.png">
 <meta property="og:image" content="http://santanico.github.io/2018/02/06/如何在-md文章中插入图片/1202495.png">
-<meta property="og:updated_time" content="2018-03-15T12:24:34.400Z">
+<meta property="og:updated_time" content="2018-03-15T12:26:26.033Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在.md文章中插入图片">
 <meta name="twitter:description" content="起因刚进hexo的坑不久，我写post的方式完全就是最基础的：1hexo new post title 然后在_posts文件夹右键拿Notepad++打开.md文件，然后开始写呀写，一开始没注意到什么问题，主要我自己也没学过Markdown，也没仔细看文档（我只看了基础篇），所以就遇到了一个大问题，写文章的时候不会插图片怎么办？？？于是今天就来学习一下到底如何在文章里插图片，并写下这个教程。">
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  896
+                  898
                 </span>
               
 
@@ -471,7 +471,7 @@
 <img src="/2018/02/06/如何在-md文章中插入图片/1202495.png" title="This is an example image">
 <p>以上是我在.md文件中写入下列代码的效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 1202495.png This is an example image %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>另外我找到了一个比<code>Notepad++</code>方便很多的<code>Markdown编辑器</code>，叫<code>Cmd Markdown</code>，看起来非常好用，下次写作试一下~</p>
-<h3 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h3><p>学会插入图片之后，接下来要解决的一个问题是图片的尺寸，上文中可以看到图片整个填充到了博文中，并不是原始尺寸。（本来只是一个很小的icon），要解决这个问题，我们就要联系到<a href="http://www.hanxueying.com/2018/02/07/Markdown" target="_blank" rel="noopener">Markdown语法基础与进阶</a>那篇文章，在那里我们说过了，Markdown还是支持html的，所以我们可以利用html来插入图片顺便更改大小。</p>
+<h3 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h3><p>学会插入图片之后，接下来要解决的一个问题是图片的尺寸，上文中可以看到图片整个填充到了博文中，并不是原始尺寸。（本来只是一个很小的icon），要解决这个问题，我们就要联系到<a href="http://www.hanxueying.com/2018/02/07/Markdown" target="_blank" rel="noopener">Markdown语法基础与进阶</a>那篇文章，在那里我们说过了，Markdown还是支持html的，所以我们可以利用html标签来插入图片顺便更改大小。</p>
 <p><img src="/2018/02/06/如何在-md文章中插入图片/1202495.png" style="width: 20%;"></p>
 <p>以上是我在.md写入下列代码的效果：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;/2018/02/06/如何在-md文章中插入图片/1202495.png&quot; style=&quot;width: 20%;&quot;&gt;</span><br></pre></td></tr></table></figure>
