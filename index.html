@@ -327,7 +327,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/25/Internet Application Lab3/" itemprop="url">爷爷-爸爸-你的神秘旅程（IA3 Linux学习笔记）</a></h1>
+                <a class="post-title-link" href="/2018/03/25/Internet Application Lab3/" itemprop="url">Internet Application 3:爷爷-爸爸-你的神秘旅程</a></h1>
         
 
         <div class="post-meta">
@@ -389,7 +389,7 @@
 
           
           
-             <span id="/2018/03/25/Internet Application Lab3/" class="leancloud_visitors" data-flag-title="爷爷-爸爸-你的神秘旅程（IA3 Linux学习笔记）">
+             <span id="/2018/03/25/Internet Application Lab3/" class="leancloud_visitors" data-flag-title="Internet Application 3:爷爷-爸爸-你的神秘旅程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2,349
+                  2,403
                 </span>
               
 
@@ -452,10 +452,10 @@
 
       
         
-          <h2 id="1-fork1-c"><a href="#1-fork1-c" class="headerlink" title="1    fork1.c"></a>1    fork1.c</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;unistd.h&gt; //此头文件包含了fork()</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span>&#123;</span><br><span class="line">	<span class="keyword">pid_t</span> t;</span><br><span class="line">	t=fork();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"fork returned %d\n"</span>,t);</span><br><span class="line">	<span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <h2 id="fork1-c"><a href="#fork1-c" class="headerlink" title="fork1.c"></a>fork1.c</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;unistd.h&gt; //此头文件包含了fork()</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span>&#123;</span><br><span class="line">	<span class="keyword">pid_t</span> t;</span><br><span class="line">	t=fork();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"fork returned %d\n"</span>,t);</span><br><span class="line">	<span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">student@BUPTIA:~/fork$ ./fork1</span><br><span class="line">fork returned 1224</span><br><span class="line">student@BUPTIA:~/fork$ fork returned 0</span><br></pre></td></tr></table></figure>
-<p><u>（1）为什么同样是c语言，这个例子不可以直接在c-free里编译运行呢？</u></p>
-<p>答：fork()这个函数来自Unix的函数库，所以在Windows下不支持，Windows上创建进程一般使用CreateProcess函数。</p>
+<p>（1）为什么同样是c语言，这个例子不可以直接在c-free里编译运行呢？</p>
+<p>答：fork()这个函数来自Unix的函数库，所以在Windows下不支持，Windows上创建进程一般使用CreateProcess函数。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/25/Internet Application Lab3/#more" rel="contents">
@@ -2515,7 +2515,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count"> |  Word Count: 23.8k words</span>
+  <span class="post-count"> |  Word Count: 23.9k words</span>
 </div>
 
         
