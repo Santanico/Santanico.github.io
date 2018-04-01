@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-04-01T09:12:52.812Z</updated>
+  <updated>2018-04-01T09:17:58.065Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://Santanico.github.io/2018/04/01/Internet%20Application%20Lab4/"/>
     <id>http://Santanico.github.io/2018/04/01/Internet Application Lab4/</id>
     <published>2018-04-01T07:09:08.000Z</published>
-    <updated>2018-04-01T09:12:52.812Z</updated>
+    <updated>2018-04-01T09:17:58.065Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Task-1&quot;&gt;&lt;a href=&quot;#Task-1&quot; class=&quot;headerlink&quot; title=&quot;Task 1&quot;&gt;&lt;/a&gt;Task 1&lt;/h2&gt;&lt;p&gt;Learn about the O_APPEND flag of open(). Please write a program to append one file to another file&lt;br&gt;with open() and lseek().&lt;br&gt;
+      &lt;h2 id=&quot;Task-1&quot;&gt;&lt;a href=&quot;#Task-1&quot; class=&quot;headerlink&quot; title=&quot;Task 1&quot;&gt;&lt;/a&gt;Task 1&lt;/h2&gt;&lt;p&gt;Learn about the O_APPEND flag of open(). Please write a program to append one file to another file with open() and lseek().&lt;br&gt;
     
     </summary>
     
