@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-04-16T17:07:15.721Z</updated>
+  <updated>2018-04-17T18:05:50.168Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -17,16 +17,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Internet Application 6预热:你们家人长得可真像</title>
+    <title>Internet Application 6:你们一家人长得可真像</title>
     <link href="http://Santanico.github.io/2018/04/17/Internet%20Application%20Lab6/"/>
     <id>http://Santanico.github.io/2018/04/17/Internet Application Lab6/</id>
     <published>2018-04-16T17:02:31.000Z</published>
-    <updated>2018-04-16T17:07:15.721Z</updated>
+    <updated>2018-04-17T18:05:50.168Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;验收完在更新…&lt;/p&gt;
-&lt;p&gt;预热：&lt;br&gt;
+      &lt;h3 id=&quot;TASK：-Write-the-programs-for-data-sending-based-on-UDP&quot;&gt;&lt;a href=&quot;#TASK：-Write-the-programs-for-data-sending-based-on-UDP&quot; class=&quot;headerlink&quot; title=&quot;TASK： Write the programs for data sending based on UDP&quot;&gt;&lt;/a&gt;TASK： Write the programs for data sending based on UDP&lt;/h3&gt;&lt;p&gt;You can design the running command format, e.g.,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./&amp;lt;exefile&amp;gt; &amp;lt;server&amp;gt; &amp;lt;data&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The server may be specified in domain name or IP address&lt;/li&gt;
+&lt;li&gt;Multiple wordscan be delivered each time&lt;/li&gt;
+&lt;li&gt;Each time the server receives data, the source (client’s IP address and port number) and the data should be displayed on the screen&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
