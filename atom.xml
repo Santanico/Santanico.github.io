@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-04-26T13:57:47.398Z</updated>
+  <updated>2018-05-05T15:08:27.194Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Internet Application 9-10:我们中间隔着缓冲区(预热）</title>
+    <link href="http://Santanico.github.io/2018/05/05/Internet%20Application%20Lab9/"/>
+    <id>http://Santanico.github.io/2018/05/05/Internet Application Lab9/</id>
+    <published>2018-05-05T14:45:05.000Z</published>
+    <updated>2018-05-05T15:08:27.194Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;TASK：-Write-two-programs-server-and-client-so-that-the-server-can-transfer-a-local-file-indicate-by-client-to-client-using-TCP&quot;&gt;&lt;a href=&quot;#TASK：-Write-two-programs-server-and-client-so-that-the-server-can-transfer-a-local-file-indicate-by-client-to-client-using-TCP&quot; class=&quot;headerlink&quot; title=&quot;TASK： Write two programs (server and client) so that the server can transfer a local file (indicate by client) to client using TCP.&quot;&gt;&lt;/a&gt;TASK： Write two programs (server and client) so that the server can transfer a local file (indicate by client) to client using TCP.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;You can design the running command format, e.g., &lt;code&gt;./&amp;lt;exefile&amp;gt; &amp;lt;server&amp;gt; &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The server may be specified in domain name or IP address&lt;/li&gt;
+&lt;li&gt;The transferred file should be indicated by client’s input&lt;/li&gt;
+&lt;li&gt;Client should rename and save the transferred content as a new file&lt;/li&gt;
+&lt;li&gt;Each time the server sends data, following information has to be printed:&lt;br&gt;&lt;u&gt;the destination (client’s IP address and port number)&lt;/u&gt;&lt;br&gt;&lt;u&gt;Amount of data that has been sent by “Byte”&lt;/u&gt;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
+    
+    
+      <category term="大三" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%89/"/>
+    
+      <category term="Linux" scheme="http://Santanico.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Lab4</title>
