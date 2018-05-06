@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="大一,C语言,Coursework," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Xueying's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Hi, 由于文件存放年代久远，且我在当时学习过程中可能有改动，仅供参考。 EX01 Programming Environment and Basic Input/Output1.Write a program that prints “This is my first program!” on the screen.(a)Save this program onto your own disk">
+<meta name="keywords" content="大一,C语言,Coursework">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大一下 C语言作业合集(EX01-EX11)">
+<meta property="og:url" content="http://Santanico.github.io/2018/02/05/大一下C语言作业合集/index.html">
+<meta property="og:site_name" content="Xueying&#39;s Blog">
+<meta property="og:description" content="Hi, 由于文件存放年代久远，且我在当时学习过程中可能有改动，仅供参考。 EX01 Programming Environment and Basic Input/Output1.Write a program that prints “This is my first program!” on the screen.(a)Save this program onto your own disk">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-02-05T17:17:41.609Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大一下 C语言作业合集(EX01-EX11)">
+<meta name="twitter:description" content="Hi, 由于文件存放年代久远，且我在当时学习过程中可能有改动，仅供参考。 EX01 Programming Environment and Basic Input/Output1.Write a program that prints “This is my first program!” on the screen.(a)Save this program onto your own disk">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://Santanico.github.io/2018/02/05/大一下C语言作业合集/"/>
+
+
+
+
+
+  <title>大一下 C语言作业合集(EX01-EX11) | Xueying's Blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8ca39f6cabdc1d34d0e7225fdbd4540c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xueying's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://Santanico.github.io/2018/02/05/大一下C语言作业合集/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xueying">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xueying's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">大一下 C语言作业合集(EX01-EX11)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-05T00:47:43+08:00">
+                2018-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Coding/" itemprop="url" rel="index">
+                    <span itemprop="name">Coding</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/05/大一下C语言作业合集/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/05/大一下C语言作业合集/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/02/05/大一下C语言作业合集/" class="leancloud_visitors" data-flag-title="大一下 C语言作业合集(EX01-EX11)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  5,699
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  35
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Hi, 由于文件存放年代久远，且我在当时学习过程中可能有改动，仅供参考。</p>
+<h3 id="EX01-Programming-Environment-and-Basic-Input-Output"><a href="#EX01-Programming-Environment-and-Basic-Input-Output" class="headerlink" title="EX01 Programming Environment and Basic Input/Output"></a>EX01 Programming Environment and Basic Input/Output</h3><p>1.Write a program that prints “This is my first program!” on the screen.<br>(a)Save this program onto your own disk with the name of e2-1a;<br>(b)Run this program without opening Turbo C;<br>(c)Modify this program to print “This is my second program!”, then save it as e2-1b. Please do not overwrite the first program.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"This is my first program!\n\n\n\n"</span>);</span><br><span class="line">	getchar();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"This is my second program!\n\n\n\n"</span>);</span><br><span class="line">	getchar();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.Write a program that prints the number 1 to 4 on the same line. Write the program using the following methods:<br>(a)Using four “printf” statements.<br>(b)Using one “printf” statement with no conversion specifier (i.e. no ‘%’).<br>(c)Using one “printf” statement with four conversion specifiers<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"1 "</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"2 "</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"3 "</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"4 \n"</span>);</span><br><span class="line"><span class="comment">// the first four statements are as the teacher asked. </span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"1 2 3 4\n"</span>);</span><br><span class="line"><span class="comment">//the second statement is for "using one printf".</span></span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>,d=<span class="number">4</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d %d %d %d \n"</span>,a,b,c,d);</span><br><span class="line"><span class="comment">//the last statement is for conversion specifier.</span></span><br><span class="line">    </span><br><span class="line">    system (<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3．(a) Write a program that calculates and displays the number of minutes in 15 days.<br>   (b) Write a program that calculates and displays how many hours 180 minutes equal to.<br>   (c) (Optional) How about 174 minutes?<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a, minutes;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please input the number of days from 0-15 \n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a);</span><br><span class="line">	minutes = a * <span class="number">24</span> * <span class="number">60</span> ;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"the minutes is %d \n"</span>,minutes);	</span><br><span class="line">	getchar();</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,hour;</span><br><span class="line">	a = <span class="number">180</span>;</span><br><span class="line">	hour = a / <span class="number">60</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"180 minutes equal to %d hours"</span>,hour);</span><br><span class="line">	</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a;</span><br><span class="line">	<span class="keyword">float</span> hour; </span><br><span class="line">	a = <span class="number">174</span>;</span><br><span class="line">	hour = a / <span class="number">60</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"180 minutes equal to %f hours"</span>,hour);</span><br><span class="line">	</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="EX02-Data-Types-and-Arithmetic-Operations"><a href="#EX02-Data-Types-and-Arithmetic-Operations" class="headerlink" title="EX02 Data Types and Arithmetic Operations"></a>EX02 Data Types and Arithmetic Operations</h3><ol>
+<li>You purchase a laptop computer for $889. The sales tax rate is 6 percent. Write and execute a C program that calculates and displays the total purchase price (net price + sales tax).<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> netprice;</span><br><span class="line">  <span class="keyword">float</span> salestax;</span><br><span class="line">  netprice = <span class="number">889</span>;</span><br><span class="line">  salestax = <span class="number">889.00</span> * <span class="number">0.06</span>;</span><br><span class="line">  <span class="keyword">float</span> total;</span><br><span class="line">  total = netprice + salestax;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"The total purchase price is %f \n\n\n"</span>,total);</span><br><span class="line">  system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2．Write a program that reads in the radius of a circle and prints the circle’s diameter, circumference and area. Use the value 3.14159 for “”.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type the radius of the circle \n"</span>);</span><br><span class="line">	<span class="keyword">float</span> radius;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%f"</span>,&amp;radius);</span><br><span class="line">	<span class="keyword">float</span> diameter,circumference,area;</span><br><span class="line">	diameter = <span class="number">2</span> * radius;</span><br><span class="line">	circumference = <span class="number">2</span> * <span class="number">3.14159</span> * radius;</span><br><span class="line">	area = <span class="number">3.14159</span> * radius * radius;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The diameter of the circle is %f \n"</span>,diameter);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The circumference of the circle is %f \n"</span>,circumference);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The area of the circle is %f \n"</span>,area);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3．Write a program that reads in two numbers: an account balance and an annual interest rate expressed as a percentage. Your program should then display the new balance after a year. There are no deposits or withdraws – just the interest payment. Your program should be able to reproduce the following sample run:<br>Interest calculation program.<br>Starting balance? 6000<br>Annual interest rate percentage? 4.25<br>Balance after one year: 6255<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Balance calculation program \n"</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Starting balance? "</span>);</span><br><span class="line">	<span class="keyword">int</span> balance;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d \n"</span>,&amp;balance);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Annual interest rate percentage? "</span>);</span><br><span class="line">	<span class="keyword">float</span> rate;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"&amp;4.2f \n"</span>,rate);</span><br><span class="line">	<span class="keyword">float</span> addbalance;</span><br><span class="line">	addbalance = balance + balance * rate * <span class="number">0.01</span> ;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Balance after one year : %f \n"</span>,addbalance);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="EX03-Selection-Structure"><a href="#EX03-Selection-Structure" class="headerlink" title="EX03 Selection Structure"></a>EX03 Selection Structure</h3><p>1．Write a C program that accepts a student’s numerical grade, converts the numerical grade to Passed (grade is between 60-100), Failed (grade is between 0-59), or Error (grade is less than 0 or greater than 100).<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Please type your grades!\n"</span>);</span><br><span class="line">    <span class="keyword">int</span> grade;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;grade);</span><br><span class="line">    <span class="keyword">if</span> ((grade &gt;= <span class="number">60</span>)&amp;&amp;(grade &lt;= <span class="number">100</span>))</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">"Pass\n"</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> ((grade &gt;= <span class="number">0</span>)&amp;&amp;(grade &lt;=<span class="number">59</span>))</span><br><span class="line">         <span class="built_in">printf</span>(<span class="string">"Fail\n"</span>);</span><br><span class="line">         <span class="keyword">else</span></span><br><span class="line">         <span class="built_in">printf</span>(<span class="string">"Error\n"</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>2．Write a program that asks the user to enter an integer number, then tells the user whether it is an odd or even number.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please enter a integer number you want to test\n"</span>);</span><br><span class="line">	<span class="keyword">int</span> num,tester;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;num);</span><br><span class="line">	tester = num % <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span> (tester == <span class="number">0</span>)</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Even\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Odd\n"</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3．Write a program that reads in three integers and then determines and prints the largest in the group.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b,c,max;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please enter three integers to be determined \n "</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">	max = a;</span><br><span class="line">	<span class="keyword">if</span> (max &lt;=b)</span><br><span class="line">	max = b;</span><br><span class="line">	<span class="keyword">if</span> (max &lt;=c)</span><br><span class="line">	max = c;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"max = %d \n"</span>,max);</span><br><span class="line"></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="EX04-‘Switch’-Statement-and-Simple-“While”-Repetition-Statement"><a href="#EX04-‘Switch’-Statement-and-Simple-“While”-Repetition-Statement" class="headerlink" title="EX04 ‘Switch’ Statement and Simple “While” Repetition Statement"></a>EX04 ‘Switch’ Statement and Simple “While” Repetition Statement</h3><ol>
+<li>Write a program that reads three integers an abbreviated date (for example: 26  12  94) and that will print the date in full; for example: 26th December 1994. The day should be followed by an appropriate suffix, ‘st’, ‘nd’, ‘rd’ or ‘th’. Use at least one switch statement.<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in 3 integers to be converted, for example:26 12 94 \n"</span>);</span><br><span class="line">	<span class="keyword">int</span> day,month,year;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;day,&amp;month,&amp;year);</span><br><span class="line">	<span class="keyword">switch</span>(day)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"1st "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"2nd "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"3rd "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">11</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"11st "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">12</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"12nd "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">13</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"13rd "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">21</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"21st "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">22</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"22nd "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">23</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"23rd "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">31</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"31st "</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"%dth "</span>,day);			</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">switch</span>(month)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"January "</span>);</span><br><span class="line">		<span class="keyword">break</span>;		</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"February "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"March "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"April "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"May "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"June "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"July "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">8</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"August "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">9</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"September "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">10</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"October "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">11</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"November "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	<span class="keyword">case</span> <span class="number">12</span>:</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"December "</span>);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(year&gt;=<span class="number">0</span> &amp;&amp; year&lt;=<span class="number">16</span>)</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"20%d"</span>,year);</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"19%d"</span>,year);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2．Write a C program that uses a while loop to calculate and print the sum of the even integers from 2 to 30.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">2</span>, sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(i&lt;=<span class="number">30</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		sum = sum + i;</span><br><span class="line">		i = i + <span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The Sum from 0 to 30 is %d \n"</span>,sum);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><p>A large chemical company pays its sales staff on a commission basis. They receive £200 per week plus 9% of their gross sales for that week. For example, someone who sells £5000 of chemicals in one week will earn £200 plus 9% of £5000, a total of £650. Develop a C program that will input each salesperson’s sales for the previous week, and print out their salary. Process one person’s figures at a time.<br> Enter sales in pounds (-1 to end): 5000.00<br> Salary is: 650.00</p>
+<p> Enter sales in pounds (-1 to end): 00.00<br> Salary is: 200.00</p>
+<p> Enter sales in pounds (-1 to end): 1088.89<br> Salary is: 298.00</p>
+<p> Enter sales in pounds (-1 to end): -1</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> CUTOFF -1</span></span><br><span class="line">	<span class="keyword">float</span> sales,salary;</span><br><span class="line">	sales = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (sales &gt; CUTOFF)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Please type in your gross sales for this week in pounds (-1 to end):"</span>);</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%f"</span>,&amp;sales);</span><br><span class="line">		salary = <span class="number">200</span> + sales * <span class="number">0.09</span>	;</span><br><span class="line">		<span class="keyword">if</span>(sales&gt;CUTOFF) </span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Salary is %6.2f \n"</span>,salary);</span><br><span class="line">	&#125;</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Optional：</p>
+<ol>
+<li>A mail order company sells five different products whose retail prices are shown in the following table:<br>Product Number        Retail Price (in pounds)<br>  1        2.98<br>  2        4.50<br>  3        9.98<br>  4        4.49<br>  5        6.87<br>Write a C program that reads in a series of pairs of numbers as follows:<br>  (1). Product number<br>  (2). Quantity sold for one day<br>Your program should use a switch statement to help determine the retail price for each product, and should use a sentinel-controlled loop to calculate the total retail value of all products sold in a given week (7days).<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> numday,number,quantity;</span><br><span class="line">	<span class="keyword">float</span> total;</span><br><span class="line">	numday = <span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(numday&lt;=<span class="number">7</span>)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in the product number and the quantity sold for day %d  "</span>,numday);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;number,&amp;quantity);</span><br><span class="line">	numday = numday + <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">switch</span>(number)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">         total = total + <span class="number">2.98</span> * quantity;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">         total = total + <span class="number">4.50</span> * quantity;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">         total = total + <span class="number">9.98</span> * quantity;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">         total = total + <span class="number">4.49</span> * quantity;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">         total = total + <span class="number">6.87</span> * quantity;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">         <span class="built_in">printf</span>(<span class="string">"Error!\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The total retail value of all products sold in this week is %6.2f \n"</span>,total);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="EX05-For-and-Do…while-Repetition-Statements"><a href="#EX05-For-and-Do…while-Repetition-Statements" class="headerlink" title="EX05 For and Do…while Repetition Statements"></a>EX05 For and Do…while Repetition Statements</h3><ol>
+<li><p>Write a program which uses a do/while loop to print out the first 10 powers of 2 other than 0 (ie. it prints out the values of 2^1, 2^2, …, 2^10). Use a for loop to do the same.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">int</span> j = <span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">do</span><span class="comment">//This is the first loop for DO/WHILE repetiton.</span></span><br><span class="line">	&#123;</span><br><span class="line">	j = <span class="number">2</span> * j ;</span><br><span class="line">	i++;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d  "</span>,j);</span><br><span class="line">	&#125;<span class="keyword">while</span>(i&lt;=<span class="number">10</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);<span class="comment">//This is to turn to the new line.</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>,j=<span class="number">1</span> ; i&lt;=<span class="number">10</span>;i++)<span class="comment">//This is the second loop for FOR repetiton.</span></span><br><span class="line">	&#123;</span><br><span class="line">	j = <span class="number">2</span> * j ;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d  "</span>,j);	</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>The constant  can be calculated by the infinite series:</p>
+<pre><code>Pi = 4 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 +....
+</code></pre><p>Write a C program that uses a do/while loop to calculate  using the series. The program should ask the user how many terms in the series should be used. Thus if the user enters ‘3’, then the program should calculate Pi as being 4 - 4/3 + 4/5.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> term;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">float</span> Pi = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">float</span> k;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in how mant terms in the series should be used."</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;term);</span><br><span class="line">	<span class="keyword">do</span></span><br><span class="line">	&#123;</span><br><span class="line">		k=(<span class="keyword">float</span>)<span class="number">4</span>/(<span class="number">2</span>*i<span class="number">-1</span>)*j*<span class="number">1.00</span>;</span><br><span class="line">		Pi=Pi+k;</span><br><span class="line">		j=j*(<span class="number">-1</span>);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(i&lt;=term);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%f"</span>,Pi);</span><br><span class="line">		</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Write a program that prints the following diamond shape. You may use printf statements that print either a single asterisk (*) or a single blank. Maximize your use of repetition (with nested for statements) and minimize the number of printf statements.<br>编辑器阵亡，详情见题目。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n=<span class="number">5</span>,t=<span class="number">1</span>,h=<span class="number">10</span>;</span><br><span class="line">	<span class="keyword">while</span>(t&lt;=n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> i=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(i&lt;h+t)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(i&lt;=h-t)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(i&gt;h-t&amp;&amp;i&lt;h+t)</span><br><span class="line">			&#123;</span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">		t++; </span><br><span class="line">	&#125;</span><br><span class="line">	 t=<span class="number">4</span>;h=<span class="number">10</span>;</span><br><span class="line">	<span class="keyword">while</span>(t&gt;<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> i=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(i&lt;h+t)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(i&lt;=h-t)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(i&gt;h-t&amp;&amp;i&lt;h+t)</span><br><span class="line">			&#123;</span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">		t--; </span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Write a program to print a table as follows:</p>
+</li>
+</ol>
+<p>1<em>1= 1<br>2</em>1= 2  2<em>2= 4<br>3</em>1= 3  3<em>2= 6  3</em>3= 9<br>….<br>9<em>1= 9  9</em>2=18  9<em>3=27  9</em>4=36  9<em>5=45  9</em>6=54  9<em>7=63  9</em>8=72 9*9=81<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">1</span>,j=<span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;j&lt;=<span class="number">9</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=i;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d*%d=%d "</span>,i,j,i*j);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="EX06-Simple-Functions"><a href="#EX06-Simple-Functions" class="headerlink" title="EX06 Simple Functions"></a>EX06 Simple Functions</h3><p>1.Write a C program that reads several numbers and uses the function round_to_nearest to round each of these numbers to the nearest integer. The program should print both the original number and the rounded number.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">round_to_nearest</span><span class="params">(<span class="keyword">float</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> num_a;<span class="keyword">int</span> num_b;</span><br><span class="line">	num_a=<span class="number">1.0</span>;</span><br><span class="line">	<span class="keyword">while</span>(num_a != <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"please type in the number you want to round,and enter 0 to quit "</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%f"</span>,&amp;num_a);</span><br><span class="line">	<span class="keyword">if</span> (num_a==<span class="number">0</span>)</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"This program is about to close,please press any key to quit \n"</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">       &#123;</span><br><span class="line">   	num_b = round_to_nearest(num_a);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"the original number is %f ,and the rounded number is %d \n"</span>,num_a,num_b);</span><br><span class="line">       &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">round_to_nearest</span><span class="params">(<span class="keyword">float</span> num_a)</span><span class="comment">//Method two</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="keyword">int</span>) (num_a + <span class="number">0.5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">int round_to_nearest(float num_a)//Method One</span></span><br><span class="line"><span class="comment">&#123;   int num,num_b;</span></span><br><span class="line"><span class="comment">	num=(int)num_a;</span></span><br><span class="line"><span class="comment">	if (num-num_a&gt;0.5 || num-num_a&lt;-0.5)</span></span><br><span class="line"><span class="comment">	num_b=num+1;</span></span><br><span class="line"><span class="comment">	else</span></span><br><span class="line"><span class="comment">	num_b=num;</span></span><br><span class="line"><span class="comment">	return num_b;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
+<p>2.Write a program that reads three pairs of numbers and adds the larger of the first pair, the larger of the second pair and the larger of the third pair. Use a function to return the larger of each pair.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">larger_number</span><span class="params">(<span class="keyword">float</span>,<span class="keyword">float</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> num1,num2,larger,total=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span> (a&lt;=<span class="number">3</span>)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in a pair of numbers  "</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%f%f"</span>,&amp;num1,&amp;num2);</span><br><span class="line">	larger=larger_number(num1,num2);</span><br><span class="line">	total=total+larger;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The larger one in this pair of numbers is %f\n"</span>,larger);</span><br><span class="line">	a++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The total of three pairs of numbers is %f \n"</span>,total);</span><br><span class="line"></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">larger_number</span><span class="params">(<span class="keyword">float</span> num1,<span class="keyword">float</span> num2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> larger;</span><br><span class="line">	<span class="keyword">if</span>(num1&gt;num2)</span><br><span class="line">	larger=num1;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	larger=num2;</span><br><span class="line">	<span class="keyword">return</span> larger;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><p>A car park charges a £2.00 minimum fee to park for up to 3 hours, and an additional £0.50 for each hour or part hour in excess of three hours. The maximum charge for any given 24-hour period is £10.00. Assume that no car parks for more than 24 hours at a time.</p>
+<p>Write a C program that will calculate and print the parking charges for each of 3 customers who parked their car in the car park yesterday. The program should accept as input the number of hours that each customer has parked, and output the results in a neat tabular form, along with the total receipts from the three customers:</p>
+<p>Car        Hours     Charge<br>1          1.5      2.00<br>2          4.0      2.50<br>3         24.0     10.00<br>TOTAL     29.5     14.50                    </p>
+<p>The program should use the function calculate_charges to determine the charge for each customer.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">calculate_charges</span><span class="params">(<span class="keyword">float</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> hour1,hour2,hour3,charge1,charge2,charge3,total_hours=<span class="number">0</span>,total_charges=<span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in three car's parking hours (from 0 to 24) \n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%f%f%f"</span>,&amp;hour1,&amp;hour2,&amp;hour3);</span><br><span class="line">	</span><br><span class="line">	charge1=calculate_charges(hour1);</span><br><span class="line">	charge2=calculate_charges(hour2);</span><br><span class="line">	charge3=calculate_charges(hour3);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Car     Hours     Charge\n"</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"1%10.1f%10.2f\n"</span>,hour1,charge1);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"2%10.1f%10.2f\n"</span>,hour2,charge2);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"3%10.1f%10.2f\n"</span>,hour3,charge3);</span><br><span class="line">	total_hours=hour1+hour2+hour3;</span><br><span class="line">	total_charges=charge1+charge2+charge3;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"TOTAL%7.2f%9.2f\n"</span>,total_hours,total_charges);</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">calculate_charges</span><span class="params">(<span class="keyword">float</span> hour)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> charge;</span><br><span class="line">	<span class="keyword">if</span>(hour&gt;<span class="number">0</span>&amp;&amp;hour&lt;=<span class="number">3</span>)</span><br><span class="line">	charge=<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(hour&gt;<span class="number">3</span>&amp;&amp;hour&lt;=<span class="number">19</span>)</span><br><span class="line">	     charge= <span class="number">2.0</span>+<span class="number">0.5</span>*(hour<span class="number">-3</span>);</span><br><span class="line">	     <span class="keyword">else</span> <span class="keyword">if</span>(hour&gt;<span class="number">19</span>&amp;&amp;hour&lt;=<span class="number">24</span>)</span><br><span class="line">      charge=<span class="number">10</span>;</span><br><span class="line">              <span class="keyword">else</span> </span><br><span class="line">              <span class="built_in">printf</span>(<span class="string">"Unvalid value of \"hour\" \n"</span>);</span><br><span class="line">      <span class="keyword">return</span> charge;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="EX07-More-Functions"><a href="#EX07-More-Functions" class="headerlink" title="EX07 More Functions"></a>EX07 More Functions</h3><ol>
+<li><p>Write a program that uses sentinel-controlled repetition to take an integer as input, and passes it to a function even which uses the modulus operator to determine if the integer is even. The function even should return 1 if the integer is even, and 0 if it is not. </p>
+<p>The program should take the value returned by the function even and use it to print out a message announcing whether or not the integer was even.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">even</span><span class="params">(<span class="keyword">int</span>)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please input an integer: (Crtl+Z or -1 to stop)\n"</span>);</span><br><span class="line">	num=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;num)!=EOF)</span><br><span class="line">	&#123;  	</span><br><span class="line">	    <span class="keyword">if</span>(even(num)==<span class="number">1</span>)</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"%d is an even number \n"</span>,num);</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(even(num)==<span class="number">0</span>)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Sorry, %d is not an even number,try again!\n"</span>,num);</span><br><span class="line">	&#125;	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">even</span><span class="params">(<span class="keyword">int</span> num)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> (num+<span class="number">1</span>)%<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Write a C program that uses the function integerPower1(base, exponent) to return the value of:</p>
+<pre><code>base^exponent
+</code></pre><p>so that, for example, integerPower1(3, 4) gives the value 3 <em> 3 </em> 3 * 3. Assume that exponent is a positive, non-zero integer, and base is an integer. The function should use a for loop, and make no calls to any math library functions.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">integerPower1</span><span class="params">(<span class="keyword">int</span>,<span class="keyword">int</span>)</span></span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;   <span class="keyword">int</span> base,exponent,integerPower1(<span class="keyword">int</span>,<span class="keyword">int</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in the base and exponent:\n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;base,&amp;exponent);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The result is %d\n"</span>,integerPower1(base,exponent));</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">integerPower1</span><span class="params">(<span class="keyword">int</span> base,<span class="keyword">int</span> exponent)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ans=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;base&gt;<span class="number">0</span>&amp;&amp;exponent&gt;<span class="number">0</span>&amp;&amp;i&lt;=exponent;i++)</span><br><span class="line">	ans=ans*base;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Write a C program that uses the recursive function integerPower2(base, exponent) to return the value of:</p>
+<pre><code>base^exponent
+</code></pre><p>so that, for example, integerPower2(3, 4) gives the value 3 <em> 3 </em> 3 * 3. Assume that exponent is a positive, non-zero integer, and base is an integer. The function should make no calls to any math library functions.<br>(Hint: the recursive step will use the relationship:</p>
+<pre><code>base^exponent = base . base^exponent - 1
+</code></pre><p>and the base case will be when exponent is 1 since : base1 = base.)</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> base, exponent, integerPower2(<span class="keyword">int</span>, <span class="keyword">int</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please input base and exponent:\n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;base, &amp;exponent);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Result is %d\n"</span>, integerPower2(base,exponent));</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">integerPower2</span><span class="params">(<span class="keyword">int</span> m, <span class="keyword">int</span> n)</span> </span></span><br><span class="line"><span class="function"></span>&#123; 	</span><br><span class="line">    <span class="keyword">if</span> (n==<span class="number">1</span>) </span><br><span class="line">	&#123; 		<span class="keyword">return</span> m; 	&#125; </span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">	&#123; 		</span><br><span class="line">	<span class="keyword">return</span> m * integerPower2(m, n - <span class="number">1</span>); 	</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="EX08-Arrays"><a href="#EX08-Arrays" class="headerlink" title="EX08 Arrays"></a>EX08 Arrays</h3><p>1.Write a program that reads ten numbers supplied by the user into a single subscripted array, and then prints out the average of them.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> numbers[<span class="number">10</span>],sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">float</span> average=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in an interger:\n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;numbers[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">	&#123;average=average+numbers[i];&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Average is %f\n"</span>,average/<span class="number">10</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>Write a program that reads ten numbers supplied by the user into a 2 by 5 array, and then prints out the maximum and minimum values held in:<br>(a) each row (2 rows)<br>(b) the whole array<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> numbers[<span class="number">2</span>][<span class="number">5</span>],max1,min1,max2,min2,maxall,minall;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)</span><br><span class="line">    &#123;    <span class="built_in">printf</span>(<span class="string">"Please type in the integer:"</span>);</span><br><span class="line">		 <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;numbers[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);&#125;</span><br><span class="line">        </span><br><span class="line">  	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)</span><br><span class="line">    &#123;    <span class="built_in">printf</span>(<span class="string">"%d"</span>,numbers[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);&#125;</span><br><span class="line">    </span><br><span class="line">    max1=min1=numbers[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)</span><br><span class="line">    &#123;</span><br><span class="line">    	max1=max1&gt;numbers[<span class="number">0</span>][j]? max1:numbers[<span class="number">0</span>][j];</span><br><span class="line">    	min1=min1&lt;numbers[<span class="number">0</span>][j]? min1:numbers[<span class="number">0</span>][j];</span><br><span class="line">    &#125;</span><br><span class="line">	max2=min2=numbers[<span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)</span><br><span class="line">    &#123;</span><br><span class="line">    	max2=max2&gt;numbers[<span class="number">1</span>][j]? max2:numbers[<span class="number">1</span>][j];</span><br><span class="line">    	min2=min2&lt;numbers[<span class="number">1</span>][j]? min2:numbers[<span class="number">1</span>][j];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    maxall=max1&gt;max2? max1:max2;</span><br><span class="line">    minall=min1&lt;min2? min1:min2;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"The maximum in row 1 is %d\n"</span>, max1);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The minimum in row i is %d\n"</span>, min1);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The maximum in row 2 is %d\n"</span>, max2);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The minimum in row 2 is %d\n"</span>, min2);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The maximum is %d\n"</span>, maxall);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The minimum is %d\n"</span>, minall);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>3．Use a single-subscripted array to solve the following problem. Read in 20 numbers, each of which is between 10 and 100, inclusive. As each number is read, print it only if it is not a duplicate of a number already read. Prepare for the “worst case” in which all 20 numbers are different. Use the smallest possible array to solve this problem.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">0</span>,duplicate=<span class="number">0</span>,a[<span class="number">20</span>];</span><br><span class="line">	<span class="keyword">do</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Please type an interger between 10 and 100 inclusively, or it will not be printed \n"</span>);</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">		<span class="keyword">if</span>(a[i]&gt;=<span class="number">10</span>&amp;&amp;a[i]&lt;=<span class="number">100</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			i++;</span><br><span class="line">			<span class="keyword">continue</span>; </span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;i;j++)</span><br><span class="line">		<span class="keyword">if</span>(a[i]==a[j])</span><br><span class="line">		&#123;</span><br><span class="line">			duplicate=<span class="number">1</span>;<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">continue</span>;</span><br><span class="line">	<span class="keyword">if</span>(duplicate==<span class="number">0</span>)</span><br><span class="line">	&#123;<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	duplicate=<span class="number">0</span>;i++;</span><br><span class="line">		</span><br><span class="line">	&#125;<span class="keyword">while</span>(i&lt;<span class="number">20</span>);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="EX09-More-Arrays"><a href="#EX09-More-Arrays" class="headerlink" title="EX09 More Arrays"></a>EX09 More Arrays</h3><p>1.Write a program that enters 5 names of towns and their respective distance (an integer) from London in miles. The program will print of the names of the towns that are less than 100 miles from London. Use arrays and character strings to implement your program.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> main()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">int</span> distance[<span class="number">5</span>];</span><br><span class="line">	<span class="keyword">char</span> town[<span class="number">5</span>][<span class="number">20</span>];</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Please type in the name of town:\n"</span>);</span><br><span class="line"><span class="comment">//		gets(town[i]);</span></span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,town[i]);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Please type in its distance to London:\n"</span>);</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;distance[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(distance[i]&lt;<span class="number">100</span>)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"The distance from %s to London is less than 100 miles.\n"</span>,town[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><p>Write a program that prompts the user to type in four character strings, places these in an array of strings, and then prints out: (e.g. I am Peter Pan)</p>
+<p>(i) The four strings in reverse order. (e.g. Pan Peter am I)</p>
+<p>(ii) The four strings in the original order, but with each string backwards. (e.g. I ma reteP naP)</p>
+<p>(iii) The four strings in reverse order with each string backwards. (e.g. naP reteP ma I)</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> main()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">char</span> <span class="built_in">string</span>[<span class="number">4</span>][<span class="number">20</span>];</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in 4 strings.\n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%s %s %s %s"</span>,<span class="built_in">string</span>[<span class="number">0</span>],<span class="built_in">string</span>[<span class="number">1</span>],<span class="built_in">string</span>[<span class="number">2</span>],<span class="built_in">string</span>[<span class="number">3</span>]);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">3</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%s "</span>,<span class="built_in">string</span>[i]);&#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n "</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">4</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">int</span> j;</span><br><span class="line">	<span class="keyword">for</span>(j=<span class="number">0</span>;<span class="built_in">string</span>[i][j]!=<span class="string">'\0'</span>;j++);</span><br><span class="line">	<span class="keyword">for</span>(j=j<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"%c"</span>,<span class="built_in">string</span>[i][j]);</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">" "</span>);	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">3</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> j;</span><br><span class="line">		<span class="keyword">for</span>(j=<span class="number">0</span>;<span class="built_in">string</span>[i][j]!=<span class="string">'\0'</span>;j++);</span><br><span class="line">		<span class="keyword">for</span>(j=j<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%c"</span>,<span class="built_in">string</span>[i][j]);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">" "</span>);	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/*for(int i=3;i&gt;=0;i--)</span></span><br><span class="line"><span class="comment">	&#123;</span></span><br><span class="line"><span class="comment">		for(int j=4;j&gt;=0;j--)</span></span><br><span class="line"><span class="comment">	    &#123;</span></span><br><span class="line"><span class="comment">			if(string[i][j]!='\0')</span></span><br><span class="line"><span class="comment">            printf("%c",string[i][j]);</span></span><br><span class="line"><span class="comment">	    &#125;</span></span><br><span class="line"><span class="comment">	    printf(" ");</span></span><br><span class="line"><span class="comment">	&#125; </span></span><br><span class="line"><span class="comment">	printf("\n ");*/</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="EX10-Pointers"><a href="#EX10-Pointers" class="headerlink" title="EX10 Pointers"></a>EX10 Pointers</h3><ol>
+<li><p>Write a program that reads 5 integers into an array, and then uses four different methods of accessing the members of an array to print them out in reverse order.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> number[<span class="number">5</span>],*NPtr;</span><br><span class="line">	NPtr=number;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in 5 integers:"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;number[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"METHOD ONE\n"</span>);	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">4</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d "</span>,number[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"METHOD TWO\n"</span>);	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">4</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d "</span>,NPtr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"METHOD THREE\n"</span>);	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">4</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d "</span>,*(number+i));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"METHOD FOUR\n"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">4</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d "</span>,*(NPtr+i));</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Write a program that reads 8 floats into an array and then prints out the second, fourth, sixth and eighth members of the array, and the sum of the first, third, fifth and seventh, using pointers to access the members of the array.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> f[<span class="number">8</span>],*fPtr,total=<span class="number">0</span>;</span><br><span class="line">	fPtr=f;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in 8 floats:"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">	  <span class="built_in">scanf</span>(<span class="string">"%f"</span>,&amp;f[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The second, fourth, sixth and eighth members of the array are as  followed:\n"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="number">8</span>;i+=<span class="number">2</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%f  "</span>,*(fPtr+i));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i+=<span class="number">2</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		total=total+*(fPtr+i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"and the sum of the first, third, fifth and seventh is: %f \n"</span>,total);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Write a program that use a SINGLE FUNCTION （用一个函数）to find and return simultaneously both the lowest and highest values in an array of type int. Suppose the size of the array is 6. </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SingleFunction</span><span class="params">(<span class="keyword">int</span> *,<span class="keyword">int</span> *)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> num[<span class="number">6</span>],i;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Please type in 6 numbers: \n"</span>);</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">6</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;num[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	SingleFunction(num,num);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SingleFunction</span><span class="params">(<span class="keyword">int</span> *max,<span class="keyword">int</span> *min)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> maxnum,minnum;</span><br><span class="line">	maxnum=*max;</span><br><span class="line">	minnum=*min;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">6</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		maxnum=maxnum &gt;= *(max+i) ? maxnum : *(max+i);</span><br><span class="line">		minnum=minnum &lt;= *(min+i) ? minnum : *(min+i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"The max is %d, and the min is %d\n"</span>,maxnum,minnum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="EX11-Files"><a href="#EX11-Files" class="headerlink" title="EX11 Files"></a>EX11 Files</h3><ol>
+<li>Write a program that enters the name and the annual salary of 5 employees from the keyboard, calculates the monthly salary of each employee assuming that tax is deducted at a flat rate of 20%. The program prints the name, the annual salary and the monthly payment (net) of each employee in a file. The program adds an employee’s number to each employee before printing the names and values:<br>No.   Employee’s Name        Annual salary    Monthly payment after tax<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> annualsalary[<span class="number">5</span>],monthlysalary[<span class="number">5</span>];</span><br><span class="line">	<span class="keyword">char</span> employee[<span class="number">5</span>][<span class="number">20</span>];</span><br><span class="line">	FILE *fptr;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span>((fptr=fopen(<span class="string">"salary.txt"</span>,<span class="string">"w"</span>))==<span class="literal">NULL</span>)</span><br><span class="line">	   <span class="built_in">printf</span>(<span class="string">"Error in opening the file \n"</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">      	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">      	&#123;</span><br><span class="line">		  <span class="built_in">printf</span>(<span class="string">"Please type in employee's name and annual salary:\n"</span>);</span><br><span class="line">      	  <span class="built_in">scanf</span>(<span class="string">"%s%f"</span>,&amp;employee[i],&amp;annualsalary[i]);&#125;</span><br><span class="line">        &#125;</span><br><span class="line">      	<span class="built_in">fprintf</span>(fptr,<span class="string">"No.   Employee's Name		Annual salary	Monthly payment after tax\n"</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">        &#123;</span><br><span class="line">		  monthlysalary[i]=annualsalary[i]/<span class="number">12</span>*<span class="number">0.8</span>;</span><br><span class="line">		  <span class="built_in">fprintf</span>(fptr,<span class="string">" %-4d   %-10s       %13.3f%25.3f\n"</span>,i+<span class="number">1</span>,employee[i],annualsalary[i],monthlysalary[i]);</span><br><span class="line">        &#125;</span><br><span class="line">	fclose(fptr);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"OK. The program has printed the name, the annual salary and the monthly payment of each employee in a file named salary.txt \n"</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2．Write a program that builds a file with information for 20 towns. Each line in the file contains name of a town followed by the distance of the town from London in miles (an integer).<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> distance[<span class="number">20</span>];</span><br><span class="line">	<span class="keyword">char</span> town[<span class="number">20</span>][<span class="number">20</span>];</span><br><span class="line">	FILE *fp;</span><br><span class="line">	<span class="keyword">if</span>((fp=fopen(<span class="string">"town.txt"</span>,<span class="string">"w"</span>))==<span class="literal">NULL</span>)</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"Error in opening the file \n"</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;i++)</span><br><span class="line">	   &#123;</span><br><span class="line">      	<span class="built_in">printf</span>(<span class="string">"Please type in No.%2d town's name and its distance from London:\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">      	<span class="built_in">scanf</span>(<span class="string">"%s %d"</span>,&amp;town[i],&amp;distance[i]);     	</span><br><span class="line">   	   &#125;</span><br><span class="line">	   <span class="built_in">fprintf</span>(fp,<span class="string">"No.   Town's Name		Distance from London \n"</span>);</span><br><span class="line">	   <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;i++)</span><br><span class="line">	   &#123;</span><br><span class="line">   		<span class="built_in">fprintf</span>(fp,<span class="string">"%2d  %11s    %20d \n"</span>,i+<span class="number">1</span>,town[i],distance[i]); </span><br><span class="line">	   &#125; </span><br><span class="line">   	&#125;</span><br><span class="line">	fclose(fp);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"OK. The program has built a file named town.txt with information for 20 towns.  \n"</span>);</span><br><span class="line">	</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3．Write a program reads the file created by the above program (in Question 2) and prints the names of the towns that are less than 100 miles from London to ANOTHER file.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> distance[<span class="number">20</span>],a;</span><br><span class="line">	<span class="keyword">char</span> town[<span class="number">20</span>][<span class="number">20</span>];</span><br><span class="line">	FILE *input,*output;</span><br><span class="line">	</span><br><span class="line">	output=fopen(<span class="string">"townanother.txt"</span>,<span class="string">"w"</span>);</span><br><span class="line">	<span class="keyword">if</span>((input=fopen(<span class="string">"town.txt"</span>,<span class="string">"r"</span>))==<span class="literal">NULL</span>)</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"Error in opening the file \n"</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">    	fseek(input, <span class="number">41</span>, SEEK_SET);</span><br><span class="line">    	<span class="built_in">fprintf</span>(output, <span class="string">"No.	Town's Name	  Distance from London\n"</span>);</span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20</span>; i++) </span><br><span class="line">			&#123;</span><br><span class="line">		     <span class="built_in">fscanf</span>(input, <span class="string">"%2d  %11s    %20d \n"</span>, &amp;a, &amp;town[i], &amp;distance[i]);</span><br><span class="line">		     <span class="keyword">if</span>(distance[i] &lt; <span class="number">100</span>) </span><br><span class="line">		    	&#123;</span><br><span class="line">			      <span class="built_in">fprintf</span>(output, <span class="string">"%2d  %11s    %20d \n"</span>, i + <span class="number">1</span>, town[i], distance[i]);</span><br><span class="line">		        &#125;</span><br><span class="line">			&#125;</span><br><span class="line">	    <span class="built_in">printf</span>(<span class="string">"OK. It has printed the names of the towns that are less than 100 miles from London to another file.\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	fclose(input);</span><br><span class="line">	fclose(output);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>好啦，以上是2016年C语言课程的所有练习题，大作业的代码咱们下次再见~</p>
+
+      
+    </div>
+    
+    
+    
+
+
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Xueying
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://Santanico.github.io/2018/02/05/大一下C语言作业合集/" title="大一下 C语言作业合集(EX01-EX11)">http://Santanico.github.io/2018/02/05/大一下C语言作业合集/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/大一/" rel="tag"># 大一</a>
+          
+            <a href="/tags/C语言/" rel="tag"># C语言</a>
+          
+            <a href="/tags/Coursework/" rel="tag"># Coursework</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/06/大一下C语言大作业/" rel="prev" title="大一下 C语言大作业">
+                大一下 C语言大作业 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Xueying" />
+            
+              <p class="site-author-name" itemprop="name">Xueying</p>
+              <p class="site-description motion-element" itemprop="description">This is my space oddity ; )</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/1876394075" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Santanico" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:930008674@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/hahxuey" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/1876394075" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://questionyu.com/" title="Question Yu's Blog" target="_blank">Question Yu's Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://luck-gh.github.io/" title="郭某人的博客" target="_blank">郭某人的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.easybib.com/v2/home" title="EasyBib" target="_blank">EasyBib</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://tutorials.jenkov.com/" title="Jenkov Tutorials" target="_blank">Jenkov Tutorials</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#EX01-Programming-Environment-and-Basic-Input-Output"><span class="nav-number">1.</span> <span class="nav-text">EX01 Programming Environment and Basic Input/Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX02-Data-Types-and-Arithmetic-Operations"><span class="nav-number">2.</span> <span class="nav-text">EX02 Data Types and Arithmetic Operations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX03-Selection-Structure"><span class="nav-number">3.</span> <span class="nav-text">EX03 Selection Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX04-‘Switch’-Statement-and-Simple-“While”-Repetition-Statement"><span class="nav-number">4.</span> <span class="nav-text">EX04 ‘Switch’ Statement and Simple “While” Repetition Statement</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX05-For-and-Do…while-Repetition-Statements"><span class="nav-number">5.</span> <span class="nav-text">EX05 For and Do…while Repetition Statements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX06-Simple-Functions"><span class="nav-number">6.</span> <span class="nav-text">EX06 Simple Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX07-More-Functions"><span class="nav-number">7.</span> <span class="nav-text">EX07 More Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX08-Arrays"><span class="nav-number">8.</span> <span class="nav-text">EX08 Arrays</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX09-More-Arrays"><span class="nav-number">9.</span> <span class="nav-text">EX09 More Arrays</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX10-Pointers"><span class="nav-number">10.</span> <span class="nav-text">EX10 Pointers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EX11-Files"><span class="nav-number">11.</span> <span class="nav-text">EX11 Files</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xueying</span>
+
+  
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
+  Visitors: <span id="busuanzi_value_site_pv"></span>
+</span>
+</div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count"> |  Word Count: 31.7k words</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'IRN3VNw9uj0AvsjUzaUKdMUU-gzGzoHsz',
+        appKey: 'MkXzEt3Ov20Cwdj91Ami5ghe',
+        placeholder: 'Just leave anything you like :)',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("k29LLcPEKEGxMWVDDJtKArkJ-gzGzoHsz", "K0RuaLfKm3AmLfBmGNItrQGI");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+  </body>
+</html>
