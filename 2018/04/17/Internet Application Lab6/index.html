@@ -90,7 +90,7 @@
 <meta property="og:description" content="TASK： Write the programs for data sending based on UDP You can design the running command format, e.g.,./&amp;lt;exefile&amp;gt; &amp;lt;server&amp;gt; &amp;lt;data&amp;gt; The server may be specified in domain name or IP ad">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://santanico.github.io/2018/03/11/Java%20Lab1/Wechat.jpg">
-<meta property="og:updated_time" content="2018-05-06T06:01:28.873Z">
+<meta property="og:updated_time" content="2018-05-06T08:51:41.157Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Internet Application 6-7:你们一家人长得可真像">
 <meta name="twitter:description" content="TASK： Write the programs for data sending based on UDP You can design the running command format, e.g.,./&amp;lt;exefile&amp;gt; &amp;lt;server&amp;gt; &amp;lt;data&amp;gt; The server may be specified in domain name or IP ad">
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2,215
+                  2,235
                 </span>
               
 
@@ -483,7 +483,11 @@
 <h4 id="通用套接字地址结构"><a href="#通用套接字地址结构" class="headerlink" title="通用套接字地址结构"></a>通用套接字地址结构</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sockaddr</span> &#123;</span></span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">short</span> sa_family; <span class="comment">/* protocol family */</span></span><br><span class="line">	<span class="keyword">char</span> sa_data[<span class="number">14</span>]; <span class="comment">/* protocol-specific address, up to 14 bytes. */</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//Pointer to generic socket address is used for address</span></span><br><span class="line"><span class="comment">//arguments to connect(), bind() and accept()</span></span><br></pre></td></tr></table></figure>
 <p>问：为什么我们要用到通用套接字地址结构？<br>答：使用套接字函数时，要把套接字地址结构的指针作为参数传递给套接字函数，然而这样的话不同类型的套接字就需要以不同类型套接字结构指针作为参数的函数，为了方便我们直接定义一个通用的，调用时参数直接转型就好了。</p>
 <p>其他相关原型：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//memset()函数原型</span></span><br><span class="line"><span class="comment">//defined in &lt;string.h&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">memset</span><span class="params">(<span class="keyword">void</span> *dest, <span class="keyword">int</span> c, <span class="keyword">size_t</span> len)</span></span>;</span><br><span class="line"><span class="comment">//memset()把目标字节串指定数目的字节置为值c。</span></span><br></pre></td></tr></table></figure></p>
-<p>今日思考：<br>1.TCP：如果Server接收了几个请求，并在同一个端口上为它们一人建立了一个Socket方便通信，这些Socket要怎么区分？<br>2.FTP：如果Server接收了几个请求，并随机开新端口为它们一人建立了一个Socket方便通信，容易有什么后果？<br>3.UDP：只把Server的Socket和sockaddr_in通过bind()绑在一块了，Client的socket该咋办？光溜溜只有一个socket descriptor要怎么查看它挂在哪个端口上？</p>
+<p>今日思考：<br>1.TCP：如果Server接收了几个请求，并在同一个端口上为它们一人建立了一个Socket方便通信，这些Socket要怎么区分？</p>
+<ul>
+<li>socket不需要得到区分，connection能区分就行了。<br>2.FTP：如果Server接收了几个请求，并随机开新端口为它们一人建立了一个Socket方便通信，容易有什么后果？<br>3.UDP：只把Server的Socket和sockaddr_in通过bind()绑在一块了，Client的socket该咋办？光溜溜只有一个socket descriptor要怎么查看它挂在哪个端口上？</li>
+<li>确实没办法？</li>
+</ul>
 <div class="note default"><h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><p><a href="https://www.baidu.com/link?url=uB5868476-lvSiR73wrcyZq5ahq4eA7T_k7jSh4yzDCdvd7OIBB5RkFvyfR6qQi0xwgxIz07ChTapYv-oVZakTKoXdqGObkD0OBQpDn2n9m&amp;wd=&amp;eqid=efe283c40001cadd000000035ad30ec0" target="_blank" rel="noopener">in_addr 的用法</a><br><a href="https://segmentfault.com/q/1010000003101541" target="_blank" rel="noopener">TCP server 为什么一个端口可以建立多个连接？</a></p></div>
 <p><img src="/2018/03/11/Java Lab1/Wechat.jpg" style="width: 30%;" alt="Scan the QR code to add me on Wechat"></p>
 
