@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-05-09T06:33:25.787Z</updated>
+  <updated>2018-05-15T04:51:07.568Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java Lab5</title>
+    <link href="http://Santanico.github.io/2018/05/15/Java%20Lab5/"/>
+    <id>http://Santanico.github.io/2018/05/15/Java Lab5/</id>
+    <published>2018-05-15T04:35:00.000Z</published>
+    <updated>2018-05-15T04:51:07.568Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note default&quot;&gt;&lt;h3 id=&quot;参考书资源&quot;&gt;&lt;a href=&quot;#参考书资源&quot; class=&quot;headerlink&quot; title=&quot;参考书资源&quot;&gt;&lt;/a&gt;参考书资源&lt;/h3&gt;&lt;p&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1Fc97VROtQv2wBrZD94iCMA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1Fc97VROtQv2wBrZD94iCMA&lt;/a&gt; 密码：2fp5&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;不嫌麻烦的同学可以点击文末分享按钮分享出去，让更多的人看到这份资源，也能给我增加一下访问量。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
+    
+    
+      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
+    
+      <category term="Java" scheme="http://Santanico.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>站长日志</title>
@@ -37,11 +60,11 @@
   </entry>
   
   <entry>
-    <title>Internet Application 9-10:我们中间隔着缓冲区(预热）</title>
+    <title>Internet Application 9-10:我们中间隔着缓冲区</title>
     <link href="http://Santanico.github.io/2018/05/05/Internet%20Application%20Lab9/"/>
     <id>http://Santanico.github.io/2018/05/05/Internet Application Lab9/</id>
     <published>2018-05-05T14:45:05.000Z</published>
-    <updated>2018-05-06T06:16:02.690Z</updated>
+    <updated>2018-05-15T04:37:39.135Z</updated>
     
     <summary type="html">
     
@@ -455,31 +478,6 @@
 &lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;h3 id=&quot;Coursework-2016-DeadLine-June-27th&quot;&gt;&lt;a href=&quot;#Coursework-2016-DeadLine-June-27th&quot; class=&quot;headerlink&quot; title=&quot;Coursework 2016 DeadLine June 27th&quot;&gt;&lt;/a&gt;Coursework 2016 DeadLine June 27th&lt;/h3&gt;&lt;p&gt;Write a program that will help elementary school pupils practice math.&lt;br&gt;a)      The program will first ask the user for his/her ID number (including two letters &amp;amp; 4 digits), e.g.&lt;br&gt;Please input your four digit ID no: AB1234&lt;br&gt;       The program should have input validation.&lt;br&gt;Then the program prompts three choices:&lt;br&gt;(1)   Start a test&lt;br&gt;(2)   Check scores&lt;br&gt;(3)   Exit&lt;/p&gt;
 &lt;p&gt;Test: the program will give 10 math problems, e.g.:&lt;/p&gt;
 &lt;p&gt;12 *  3 = 36&lt;br&gt;48 + 32 = 80&lt;br&gt;…&lt;br&gt;56 / 28 = 2&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
-    
-    
-      <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
-    
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="Coursework" scheme="http://Santanico.github.io/tags/Coursework/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大一下 C语言作业合集(EX01-EX11)</title>
-    <link href="http://Santanico.github.io/2018/02/05/%E5%A4%A7%E4%B8%80%E4%B8%8BC%E8%AF%AD%E8%A8%80%E4%BD%9C%E4%B8%9A%E5%90%88%E9%9B%86/"/>
-    <id>http://Santanico.github.io/2018/02/05/大一下C语言作业合集/</id>
-    <published>2018-02-04T16:47:43.000Z</published>
-    <updated>2018-05-06T06:20:10.158Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Hi, 由于文件存放年代久远，且我在当时学习过程中可能有改动，仅供参考。&lt;/p&gt;
-&lt;h3 id=&quot;EX01-Programming-Environment-and-Basic-Input-Output&quot;&gt;&lt;a href=&quot;#EX01-Programming-Environment-and-Basic-Input-Output&quot; class=&quot;headerlink&quot; title=&quot;EX01 Programming Environment and Basic Input/Output&quot;&gt;&lt;/a&gt;EX01 Programming Environment and Basic Input/Output&lt;/h3&gt;&lt;p&gt;1.Write a program that prints “This is my first program!” on the screen.&lt;br&gt;(a)Save this program onto your own disk with the name of e2-1a;&lt;br&gt;(b)Run this program without opening Turbo C;&lt;br&gt;(c)Modify this program to print “This is my second program!”, then save it as e2-1b. Please do not overwrite the first program.&lt;br&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;This is my first program!\n\n\n\n&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	getchar();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
