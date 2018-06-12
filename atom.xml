@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-05-15T04:51:07.568Z</updated>
+  <updated>2018-06-12T03:54:57.371Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DeeCamp2018笔试题第一套A卷</title>
+    <link href="http://Santanico.github.io/2018/06/12/DeeCamp2018%E7%AC%94%E8%AF%95%E9%A2%98%E7%AC%AC%E4%B8%80%E5%A5%97A%E5%8D%B7/"/>
+    <id>http://Santanico.github.io/2018/06/12/DeeCamp2018笔试题第一套A卷/</id>
+    <published>2018-06-12T03:24:21.000Z</published>
+    <updated>2018-06-12T03:54:57.371Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;emmmm，分享一次蜜汁自信结果挫败之旅。&lt;/p&gt;
+&lt;p&gt;emmmm，刚考完试我是非常自信的，就是很自信，为什么呢？？？我也不知道（疯人疯语ing）&lt;/p&gt;
+&lt;p&gt;还满怀激动的等待出成绩，出了成绩惊呆了，咋这么低分啊？？？一看，基础题全错了T T&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Living" scheme="http://Santanico.github.io/categories/Living/"/>
+    
+    
+      <category term="大三" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%89/"/>
+    
+      <category term="AI" scheme="http://Santanico.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Lab5</title>
@@ -462,33 +486,6 @@
       <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大一下 C语言大作业</title>
-    <link href="http://Santanico.github.io/2018/02/06/%E5%A4%A7%E4%B8%80%E4%B8%8BC%E8%AF%AD%E8%A8%80%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
-    <id>http://Santanico.github.io/2018/02/06/大一下C语言大作业/</id>
-    <published>2018-02-05T17:02:58.000Z</published>
-    <updated>2018-05-06T06:20:13.589Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Hi, 这篇文章是关于大一年级下学期C语言最后的大作业，年代久远，仅供参考哦~&lt;/p&gt;
-&lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;h3 id=&quot;Coursework-2016-DeadLine-June-27th&quot;&gt;&lt;a href=&quot;#Coursework-2016-DeadLine-June-27th&quot; class=&quot;headerlink&quot; title=&quot;Coursework 2016 DeadLine June 27th&quot;&gt;&lt;/a&gt;Coursework 2016 DeadLine June 27th&lt;/h3&gt;&lt;p&gt;Write a program that will help elementary school pupils practice math.&lt;br&gt;a)      The program will first ask the user for his/her ID number (including two letters &amp;amp; 4 digits), e.g.&lt;br&gt;Please input your four digit ID no: AB1234&lt;br&gt;       The program should have input validation.&lt;br&gt;Then the program prompts three choices:&lt;br&gt;(1)   Start a test&lt;br&gt;(2)   Check scores&lt;br&gt;(3)   Exit&lt;/p&gt;
-&lt;p&gt;Test: the program will give 10 math problems, e.g.:&lt;/p&gt;
-&lt;p&gt;12 *  3 = 36&lt;br&gt;48 + 32 = 80&lt;br&gt;…&lt;br&gt;56 / 28 = 2&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
-    
-    
-      <category term="大一" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
-    
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="Coursework" scheme="http://Santanico.github.io/tags/Coursework/"/>
     
   </entry>
   
