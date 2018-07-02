@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="大三," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Xueying's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="诶，来纪念一把物流链，我自己总结的时候是所有topic都过了一遍，但在发表之前我把部分topic删掉了，因为我觉得…那几个topic没法出题…并不需要记下来… 斜线部分我觉得也不太重要…">
+<meta name="keywords" content="大三">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Logistics and SCM 总结">
+<meta property="og:url" content="http://Santanico.github.io/2018/07/02/Logistics and SCM/index.html">
+<meta property="og:site_name" content="Xueying&#39;s Blog">
+<meta property="og:description" content="诶，来纪念一把物流链，我自己总结的时候是所有topic都过了一遍，但在发表之前我把部分topic删掉了，因为我觉得…那几个topic没法出题…并不需要记下来… 斜线部分我觉得也不太重要…">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/1.png">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/2.jpg">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/3.jpg">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/4.png">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/5.png">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/6.png">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/7.png">
+<meta property="og:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/8.png">
+<meta property="og:image" content="http://santanico.github.io/2018/03/11/Java%20Lab1/Wechat.jpg">
+<meta property="og:updated_time" content="2018-07-02T07:48:47.417Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Logistics and SCM 总结">
+<meta name="twitter:description" content="诶，来纪念一把物流链，我自己总结的时候是所有topic都过了一遍，但在发表之前我把部分topic删掉了，因为我觉得…那几个topic没法出题…并不需要记下来… 斜线部分我觉得也不太重要…">
+<meta name="twitter:image" content="http://santanico.github.io/2018/07/02/Logistics%20and%20SCM/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://Santanico.github.io/2018/07/02/Logistics and SCM/"/>
+
+
+
+
+
+  <title>Logistics and SCM 总结 | Xueying's Blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8ca39f6cabdc1d34d0e7225fdbd4540c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xueying's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://Santanico.github.io/2018/07/02/Logistics and SCM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xueying">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xueying's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Logistics and SCM 总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-02T15:33:00+08:00">
+                2018-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Living/" itemprop="url" rel="index">
+                    <span itemprop="name">Living</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/02/Logistics and SCM/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/02/Logistics and SCM/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/07/02/Logistics and SCM/" class="leancloud_visitors" data-flag-title="Logistics and SCM 总结">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  6,130
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  36
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div class="note default"><p>诶，来纪念一把物流链，我自己总结的时候是所有topic都过了一遍，但在发表之前我把部分topic删掉了，因为我觉得…那几个topic没法出题…并不需要记下来… 斜线部分我觉得也不太重要…</p></div>
+<a id="more"></a>
+<h1 id="TOPIC-1-Introduction"><a href="#TOPIC-1-Introduction" class="headerlink" title="TOPIC 1 Introduction"></a>TOPIC 1 Introduction</h1><p><strong>Theory of SCM</strong></p>
+<p>Companies seek to design business models that meet customer needs better than competitors. Success depends on the ability to Design, Make, and Deliver innovative, high quality, low cost products and services that customers demand.</p>
+<p><img src="/2018/07/02/Logistics and SCM/1.png" style="width: 80%;"></p>
+<p>​                                                  </p>
+<p><strong>SCM</strong></p>
+<p>Supply chain management is the design and management of seamless, value-added</p>
+<p>processes across organisational boundaries to meet the real needs of the end customer.</p>
+<p><strong>Logistics defined</strong></p>
+<p> “…the part of the supply chain that plans, implements, and controls the efficient, effective flow and storage of goods, services, and related information from the point of origin to the point of consumption in order to meet customers’ requirements.”</p>
+<p><strong>Third-party Logistics (3PL)</strong></p>
+<p>3PL service providers are companies who provide a range of logistics</p>
+<p>activities for their clients. E.g. distribution centres, warehouse facilities, manage the delivery of the products through their transport fleets or undertake value-adding services</p>
+<p>such as re-packing.</p>
+<p><strong>4PL™</strong></p>
+<p>4PLs™ originated by Accenture (previously Anderson Consulting).</p>
+<p>Modern supply chain network is global and complicated, the capabilities to manage does not exist in any one Organisation. </p>
+<p>There’s a need for a specialist Organisation, to form a JV with the focal firm, use its</p>
+<p>knowledge of SCs and 3PLs to manage and integrate end-to-end supply chain.</p>
+<h1 id="TOPIC-3-Information-Technology-in-a-Supply-Chain"><a href="#TOPIC-3-Information-Technology-in-a-Supply-Chain" class="headerlink" title="TOPIC 3 Information Technology in a Supply Chain"></a>TOPIC 3 Information Technology in a Supply Chain</h1><p><strong>Three types of technologies</strong></p>
+<p>Product technologies – features and characters of a product/service</p>
+<p>Process technologies – method, procedures</p>
+<p>·  Assembly line model</p>
+<p>·  RFID, chipping</p>
+<p>Information technologies – collection, storage, sending of data</p>
+<p>·  IoT</p>
+<p>·  Big data</p>
+<p><strong>Role of information in SC</strong></p>
+<p>Information is a key driver that serves as the glue to create a coordinated supply chain.</p>
+<p>Information must be:</p>
+<p>·         Accurate</p>
+<p>·         Accessible in a timely manner</p>
+<p>·         Be of the right kind -&gt; match</p>
+<p>Information provides the basis for some decisions</p>
+<p>·         Inventory</p>
+<p>·         Transportation</p>
+<p>·         Facility</p>
+<p><strong>The importance of information</strong></p>
+<p>Real-time information regarding availability, delivery, shipping, and invoices allow for improved customer satisfaction.</p>
+<p>Substituting information for inventory or other resources reduces cost.</p>
+<p>Information can be used to increase flexibility. -&gt;chain shops</p>
+<p>Information sharing is redefining supply chain relationships.</p>
+<p><strong>Enterprise Resource Planning – ERP</strong></p>
+<p>ERP system – a single database surrounded by application programs that take data from the database and either conduct analysis or collect additional data for the firm.</p>
+<p>-&gt; integrated, single</p>
+<p><strong>ERP implementation process</strong></p>
+<p>\1. define the current process “as is”</p>
+<p>\2. define what the “best in class” business process should be</p>
+<p>\3. develop the system</p>
+<p>\4. work through all final “bugs” and then “flip the switch”</p>
+<p><strong><em>ERP implementation issues</em></strong></p>
+<p><em>Never-ending implementation</em></p>
+<p><em>Importance of process mapping</em></p>
+<p><em>Process redesign</em></p>
+<p><em>Use of consultant</em></p>
+<p><em>Excessive cost</em></p>
+<p><em>Resistance to change</em></p>
+<p><em>Error during implement</em></p>
+<p><em>Rapid technological change</em></p>
+<p><strong>ERP- the future</strong></p>
+<p>ERP systems were designed to enhance internal firm communication thereby facilitating exchange with external parties.</p>
+<p>Growing demand for collaboration among supply chain parties resulted in the proposal of two new systems:</p>
+<p>·         ERP II</p>
+<p>·         Enterprise Commerce Management - ECM</p>
+<p><strong>Radio Frequency Technology</strong></p>
+<p>\1. radio frequency transmissions between computer systems and mobile operators.</p>
+<p>·         Used extensively in warehouse and distribution centre operations.</p>
+<p>·         Improves picking efficiency and accuracy.</p>
+<p>\2. radio frequency identification tag (RFID) – code electronic chips embedded in the product or in product packaging.</p>
+<p><strong>Comparison between RFID and bar code</strong></p>
+<p>Unlike barcodes, RFID does not require line of sight to be scanned.</p>
+<p>RFID tags can hold much more information than bar codes.</p>
+<p>RFID information can be unique to every product, not just specific type of item or UPC code.</p>
+<p>·  Used extensively in warehouse and distribution centre operations, which improves picking efficiency and accuracy.</p>
+<p>·  Other benefits include: time-saving; easy to track; large volume of information gathered at the same time;</p>
+<p>·   But barcodes are still in use, especially at POS (point of sales) level, due to its low-cost and compatibility with existing information system.</p>
+<p><strong>The Supply Chain IT Framework</strong></p>
+<p><strong>The supply chain macro processes</strong></p>
+<p>·         Customer Relationship Management – CRM</p>
+<p>​            The process that take place between an enterprise and its customers downstream in the supply chain.</p>
+<p>o   Marketing</p>
+<p>o   Selling</p>
+<p>o   Order management</p>
+<p>o   Call/service center</p>
+<p>·         Internal Supply Chain Management – ISCM</p>
+<p>​            Includes all processes involved in planning for and fulfilling a customer order. There must be strong integration between the ISCM and CRM macro process.</p>
+<p>o   Strategic planning</p>
+<p>o   Demand planning</p>
+<p>o   Supply planning</p>
+<p>o   Fulfilment planning</p>
+<p>o   Field service</p>
+<p>·         Supplier Relationship Management – SRM</p>
+<p>​            The processes focused on the interaction between the enterprise and suppliers that are upstream in the supply chain. There is a natural fit between ISCM and SRM processes.</p>
+<p>o   Design collaboration</p>
+<p>o   Source</p>
+<p>o   Negotiate</p>
+<p>o   Buy</p>
+<p>o   Supply collaboration</p>
+<p><em>·         Plus: Transaction Management Foundation – TFM</em></p>
+<p><em>o   Enterprise software systems – ERP</em></p>
+<p><em>o   Earlier systems focused on automation of simple transactions and the creation of an integrated method of storing and viewing data across the enterprise</em></p>
+<p><em>o   Real value of the TMF exists only if decision making is improved</em></p>
+<p><em>o   The extent to which the TMF enables integration across the three macro processes determines its value</em></p>
+<p><strong>Supply Chain IT in Practice</strong></p>
+<p>Select an IT system that addresses the company’s key success factors</p>
+<p>Take incremental steps and measure value</p>
+<p>Align the level of sophistication with the need for sophistication</p>
+<p>Use IT system to support decision making, not to make decisions</p>
+<p>Think about the future</p>
+<h1 id="TOPIC-4-Customer-Fulfilment"><a href="#TOPIC-4-Customer-Fulfilment" class="headerlink" title="TOPIC 4: Customer Fulfilment"></a>TOPIC 4: Customer Fulfilment</h1><p><strong>Information-empowered customer – they are becoming more powerful</strong></p>
+<p>·         Customer are empowered with a broad range of product and pricing information</p>
+<p>·         Channel power is shifting down the supply chain toward the end customer</p>
+<p>·         Combined these phenomena have created customers that use market leverage to demand higher levels of services at lower cost. (product分三种：core, actual, augmented)</p>
+<p><strong>Customer seek value in terms of</strong> </p>
+<p>\1. Quality</p>
+<p>·         Quality includes both design and manufacturing elements</p>
+<p>·         The product must be designed to live up to or exceed customer expectation</p>
+<p>·         Manufacturing must then conform to the specification during production</p>
+<p>·         Quality must be designed and built into the company’s products and processes</p>
+<p>\2. Cost - Four strategies are widely pursued:</p>
+<p>·         1. productivity enhancement – economy scale</p>
+<p>·         2. adoption of advanced process technology</p>
+<p>·         3. locating facilities in countries with low-cost inputs – factory, region</p>
+<p>·         4. sourcing from the world’s most efficient suppliers</p>
+<p>·          </p>
+<p>\3. Flexibility – air ticket, refundable with higher price</p>
+<p>·         Flexibility is the capability to adapt to new, different, or changing requirements</p>
+<p>·         Flexible organisation operate with short lead time, are responsible to special customer request, and can adapt rapidly to unexpected events</p>
+<p>·         Flexibility requires investment in information and automated production and logistics technologies.</p>
+<p>\4. Delivery</p>
+<p>·         Competing on delivery means consistently delivering on-time and in the correct quality</p>
+<p>·         Fast, reliable delivery requires the reduction of order cycle time and the elimination of variability</p>
+<p>·         Coordinate sourcing, operations, and logistics</p>
+<p>\5. Innovation</p>
+<p>·         Innovation creates new markets and changes industry standards</p>
+<p>·         Early Supplier Involvement is a key element of innovation strategies</p>
+<p><strong>Eight Dimensions of Quality</strong></p>
+<p>\1. performance – the primary operation characteristics of the product</p>
+<p>\2. features – the bells and whistles or extras that distinguish a product from competitors’ offerings</p>
+<p>\3. reliability – the notion that a product can be counted on not to fail</p>
+<p>\4. conformance – measures how well a product matches established specifications</p>
+<p>\5. durability – refers to the product’s mean time between failures and its overall life expectancy</p>
+<p>\6. serviceability – the speed of repair when quality problems arise</p>
+<p>\7. aesthetics – perception of fit and finish or artistic value</p>
+<p>\8. perceived quality – overall perception of a product or brand’s quality reputation</p>
+<p>Example: if a car needs long-time charging – not enough reliability. You can build more chargers, improve serviceability</p>
+<p><strong>Competing on the cost</strong></p>
+<p>Four strategies are widely pursued:</p>
+<p>\1. productivity enhancement – economy scale</p>
+<p>\2. adoption of advanced process technology</p>
+<p>\3. locating facilities in countries with low-cost inputs – factory, region</p>
+<p>\4. sourcing from the world’s most efficient suppliers</p>
+<p>Customer Service Strategies </p>
+<p>·         Traditional customer service focused on internal service levels and goals: </p>
+<p>o   Percent defective products </p>
+<p>o   Percent on-time delivery </p>
+<p>o   Fill rate </p>
+<p>·         Without feedback it is easy to emphasize activities the customer does not value. </p>
+<p>o   Service Gaps</p>
+<p><strong>Customer Satisfaction</strong></p>
+<p>Customer satisfaction is based on whether a good or service meets or exceeds the customer’s prior expectations.</p>
+<p>The key to satisfying customer is to understand their needs so that unique products and services can be developed.</p>
+<p>Creating satisfaction should be the goal of the company’s culture and structure.</p>
+<p><strong>Customer Success Strategies</strong></p>
+<p>非常简单，就是我要用我的好产品来让你更成功。并不是对end-customer来讲，而是对紧邻的下一级customer而言。</p>
+<p>Customer success strategies use supply chain knowledge to help customers become more competitive.</p>
+<p>·         A clearly communicated goal to help customers succeed</p>
+<p>·         A clear understanding of downstream requirements</p>
+<p>·         Investment in customer-valued capabilities</p>
+<p>·         Training provided to customers</p>
+<p>·         Resources shared with customer</p>
+<p>Example: intel – help you sell more products to end customers, since you use my components/chips.</p>
+<p><strong>三种customer fulfilment strategies</strong></p>
+<p>·         Customer service</p>
+<p>·         Customer satisfaction</p>
+<p>·         Customer success</p>
+<p><strong>End Customer</strong></p>
+<p>Where you can earn real money, from who really put money into the supply chain.</p>
+<p>Successful companies share information that helps the chain focus on the end customer.</p>
+<p><strong>Customer Analysis</strong></p>
+<p>·         Customer analysis identifies customer needs, helping management to segment customer.</p>
+<p>·         Customer segmentation – the identification of unique groups of customers who possess similar needs – allowing the development of products and systems necessary to fulfil the needs of different customer groups.</p>
+<p>·         Who makes big/small difference to the supply chain, not age, gender, geographic location…</p>
+<p><strong>Customer Segmentation with Pareto</strong></p>
+<p>Relationship intensity can be categorized as follows:</p>
+<p>A - customers are valued and received the highest service</p>
+<p>B - customers should be managed carefully</p>
+<p>C – customers should be managed fairly and efficiently</p>
+<p>·         A select number of A customers with Customer of Choice Relationships</p>
+<p>·         Many A and most B customers with Highly Valued Relationships</p>
+<p>·         C customers comprise Transaction Relationship</p>
+<h1 id="WEEK-1-SEMINAR"><a href="#WEEK-1-SEMINAR" class="headerlink" title="WEEK 1 SEMINAR"></a>WEEK 1 SEMINAR</h1><p>通过Beer Game让大家计算inventory和backlog, 前提是inventory存货花费1单位，backlog欠货则花费2单位，发现inventory和backlog之间的trade-off很困难，且欠货比存货要惨（欠货少赚2块钱，存货堆积花销1块钱）。</p>
+<p> <img src="/2018/07/02/Logistics and SCM/2.jpg" style="width: 80%;"></p>
+<p><strong>Bullwhip effect (exaggerated demands along the SC) 虽然不在正课里但是往年考过</strong></p>
+<p>Bullwhip effect cost can be as high as 12-25 %.</p>
+<p>Variation in demand is exaggerated as information moves upstream away from the point of use.</p>
+<p>Variation in demand is exaggerated due to infrequent demand and/or inventory level information exchanged and order batching.</p>
+<p>It can be effectively mitigated by:</p>
+<p>·         Sharing point of sale data – focus on POS and VMI (vendor managed inventories) to reduce distortions.</p>
+<p>·         Collaboration forecasting – allocate demand among customers based on past orders, not present orders</p>
+<p>·         Collaborative future product promotion planning – work with vendors to create small order increments and reduce order batching, maintain stable price</p>
+<h1 id="TOPIC-5-Order-Fulfilment-–-Purchasing-Operations-and-Logistics"><a href="#TOPIC-5-Order-Fulfilment-–-Purchasing-Operations-and-Logistics" class="headerlink" title="TOPIC 5 Order Fulfilment – Purchasing, Operations, and Logistics"></a>TOPIC 5 Order Fulfilment – Purchasing, Operations, and Logistics</h1><p><strong>Definition</strong></p>
+<p>Order fulfilment is the process that actually makes and delivers a product or service.</p>
+<p>Three functions are responsible:</p>
+<p>·         Purchasing – acquires the inputs used to support production</p>
+<p>·         Production – converts inputs into outputs that customers value</p>
+<p>·         Logistics – transports and stores goods assuring access</p>
+<p><strong>SCOR Model</strong></p>
+<p>The Supply-Chain Operation Reference (SCOR) model helps to create a common vision for managing and coordinating five primary SC processes.</p>
+<p><strong>Elements of the SCOR Model</strong></p>
+<p>\1. Plan: processes that balance demand and supply to develop a course of action to meet sourcing, production, and delivery needs. This process aligns the supply chain with the financial plan. – purchasing, supply management, procurement(采购), acquisition of goods or service, sub substantially leverage profit.</p>
+<p>·         Cut in cost is more effective than improving the sale. Example: labour and overhead costs are easy to cut…</p>
+<p>·         或者说 changes in purchasing spend have a significant leverage effect on a firm’s profits.</p>
+<p><em>·         Outsourcing – purchasing role</em></p>
+<p><em>o   Focus on core competencies has led many companies to outsource value added activities</em></p>
+<p><em>o   Sourcing professionals take on the role of acquiring and managing: inputs, supplier capacity and supplier capabilites</em></p>
+<p>\2. Source: processes that purchase goods and services to meet planned or actual demand. Emphasis is on <strong>selecting suppliers, establishing policies. Scheduling deliveries, and assessing performance</strong>.</p>
+<p>\3. Make: processes that transform product to a finished product to meet demand. Emphasis is on scheduling production, measuring performance, managing inventory, and configuring the network.</p>
+<p>\4. Deliver: processes that provide finished goods or services to customer. Emphasis is on order management, warehouse management, and transportation management.</p>
+<p>\5. Return: processes associated with the return of products for any reason, and includes post-delivery customer support. Emphasis is on reverse logistic and long term customer support.</p>
+<p>   <img src="/2018/07/02/Logistics and SCM/3.jpg" style="width: 80%;"></p>
+<p><strong>Sourcing process</strong></p>
+<p>-&gt;Recognition and Description of Need</p>
+<p>-&gt;Supplier Selection (identification-evaluation-approval-monitor)</p>
+<p>-&gt;Transaction Management – price</p>
+<p>·         <strong>Reverse Auction</strong>: defined by suppliers bidding for a customer’s business.</p>
+<p>​            Supplier participants should be prequalified, winning bidders should have their capabilities verified before contracts are issued.</p>
+<p>​            Focus on price and competitiveness contrary to total cost of ownership and collaborative relationships.</p>
+<p>​            Conditions (when to do): uncertainty of size, willingness of seller, large quantities, selling surplus assets, some services like car rentals, freight services, travel.</p>
+<p><em>-&gt;Transaction Management – orders</em></p>
+<p><em>·         Purchase orders – specify the terms and conditions of purchase agreement and initiate supplier actions</em></p>
+<p><em>·         Blanket orders – specify overall terms of agreement for a given time period and coven entire quantity to be purchased</em></p>
+<p><em>-&gt;Transaction Management – inspection</em></p>
+<p><em>·         Supplier Certification Programs focus on improving suppliers’ abilities to produce high quality products, eliminate the need for inspection.</em></p>
+<p><em>-&gt;Transaction Management – payment</em></p>
+<p><em>-&gt;Performance Monitoring</em></p>
+<p><em>-&gt;Production Management</em></p>
+<p><strong>The Logistics Process</strong></p>
+<p>·         Material management – is concerned with the inbound movement and storage of raw materials, purchased components, and subassemblies entering and flowing through the conversion process</p>
+<p>·         Physical distribution- focuses on the outbound transportation and storage of finished products from point of manufacture to where customer wish to acquire them</p>
+<p><strong>Order Cycle</strong></p>
+<p>Order receipt-&gt;recognition of need-&gt;order preparation-&gt;order transmittal-&gt;order processing-&gt;order shipment-&gt;order receipt一个循环的圈</p>
+<p><strong>Order fulfilment activities</strong></p>
+<p>·         Inventory management</p>
+<p>·         Facility location and design</p>
+<p>·         Transportation management</p>
+<p>o   Models include: Rail, Motor Carrier, Pipeline, Ship, Airplane, Internet</p>
+<p>·         Warehousing</p>
+<p>·         Order process</p>
+<p><strong><em>Warehouse activities</em></strong></p>
+<p><em>·         Shipping and receiving goods and materials</em></p>
+<p><em>·         Materials handling and order processing</em></p>
+<p><em>·         Consolidating and distributing shipments</em></p>
+<p><em>·         Transportation management</em></p>
+<p><em>·         Products packaging and labelling</em></p>
+<p>·         Re-packaging and mixing </p>
+<p><em>·         Preparation of in-store displays</em></p>
+<p><em>·         Light manufacturing or assembly</em></p>
+<p><em>·         Scrap and disposal</em></p>
+<h1 id="TOPIC-6-Supply-Chain-Mapping"><a href="#TOPIC-6-Supply-Chain-Mapping" class="headerlink" title="TOPIC 6 Supply Chain Mapping"></a>TOPIC 6 Supply Chain Mapping</h1><p>Mapping 是为了 improvement</p>
+<p>主要有三方面：</p>
+<p>·         Process mapping – <strong>create visibility</strong> of current and improved process. </p>
+<p>就流程图，input – xxx process – output 描述整个过程。</p>
+<p>·         Value Stream mapping – depicts flow of information and material (physical)， 就是process map加上 process time, performance characteristics, information flow, physical flow这些流程之外的具体细节。</p>
+<p>·         SC mapping – displays dynamic that govern how a SC works, pipeline map</p>
+<p>How to improve?</p>
+<p>·         Process analysis – identify the non-value added or redundant activities来砍掉没用的，提高效率；就是检查过程：总体的，个体的，循环的，最后在总体来一遍</p>
+<p>o   Exam the time, cost, resource and people involved in each step</p>
+<p>o   Re-exam each decision symbol</p>
+<p>o   Check each rework loop (iterative processes)</p>
+<p>o   Finally look at each process step again</p>
+<p>·         Supply Chain Design</p>
+<p>o   Identify end customer</p>
+<p>o   Determine value proposition就是价值观</p>
+<p>o   Analyse who possesses power (manufacturer, distributor, retailer or other party), 谁厉害我就让它当我的驱动力</p>
+<p>o   Isolate the major processes required to support the value proposition,主要流程肯定不能砍，只能先隔离出来</p>
+<p>o   Establish what the ideal SC would like, 就是看看优化完了能成什么样</p>
+<p><em>·         Design Tools</em></p>
+<p><em>o   SCOR model – 5 activities</em></p>
+<p><em>o   Supply Chain Double Helix</em></p>
+<p><em>o   Nature of Product or Service</em></p>
+<p><em>o   Product Life-Cycle</em></p>
+<p><em>·         怎么运用SCOR模型？</em></p>
+<p><em>o   Analyse the basis for competition</em></p>
+<p><em>o   Configure the current supply chain as it is</em></p>
+<p><em>o   Align performance levels, practices and systems across information and work flows</em></p>
+<p><em>o   Implement SC processes</em></p>
+<p><strong>两种Supply Chain</strong></p>
+<p>·         Responsive – innovative products have relatively high profit margin, unpredictable short-lived demand, high risk of being obsolete, so supply chain should seek to minimize inventory and focus on speed and flexibility</p>
+<p>​            Example: smart phones</p>
+<p>·         Efficient – functional products have relatively predictable demand, long life cycle, large number of substitutes, so supply chain should seek to minimize cost and focus on reliable, high service level</p>
+<p>​            Example: table</p>
+<h1 id="TOPIC-7-Core-Competencies-and-Outsourcing"><a href="#TOPIC-7-Core-Competencies-and-Outsourcing" class="headerlink" title="TOPIC 7 Core Competencies and Outsourcing"></a>TOPIC 7 Core Competencies and Outsourcing</h1><p><strong>Definition</strong> </p>
+<p>Core competency is the set of activities, skills or advantages that distinguishes a company from its competitors.</p>
+<p>·         Value added 有价值</p>
+<p>·         Difficult to replicate or imitate 不好效仿</p>
+<p>·         Good at the skill set, willing to become excellent 是不是真的那么优秀</p>
+<p>·         Broad enough to enter diverse market or business 真的适用</p>
+<p><strong>Complementary Core Competencies</strong> 自己没有的，需要别人的</p>
+<p>·         Once a company finds its core competency, it can design SC to support its competitive strategy, value proposition and competency development 扬长</p>
+<p>·         Outsourcing non-critical activities to SC partners allow companies to leverage complementary core competency 避短，自己没有的就找外包伙伴来做</p>
+<p><strong>Outsourcing定义</strong></p>
+<p>Outsourcing is the process of moving an aspect of production, service or business function from within an organisation to an outside supplier.</p>
+<p><strong><em>Outsourcing Trend</em></strong></p>
+<p><em>·         Contract Manufacturing – CM, a third-party makes an end product or major component under another’s company’s brand</em></p>
+<p><em>·         Third-Party Logistics – 3PL, using a supplier to provide some combination of logistics activities</em></p>
+<p><em>·         Off-shoring – outsourcing to a different country</em></p>
+<p><em>·         Business Process Outsourcing – BPO outsourcing support functions such as HR, payroll, logistics</em></p>
+<p><strong>OEM original equipment manufacturer</strong></p>
+<p>A company that purchases computer or other complex components from manufacturers, add other hardware or software, and sell the system, for specific application</p>
+<p>Example: Dell buys chips from Intel and then sells Dell PCs</p>
+<p><strong>EMS electronic manufacturing services</strong></p>
+<p>Companies that test, manufacture, distribute and provide return/repair services for electronic components and assemblies for OEMs, also called electronic contract manufacturing ECM</p>
+<p><strong>ODM original design manufacturer</strong></p>
+<p>Company that designs and manufactures a product as specified and eventually rebranded by another firm for sale. It owns, designs in-house the products that are branded by the buying firm。</p>
+<p>·         ODM creates own intellectual property and proactive in patenting it.</p>
+<p><strong>Benefit of Outsourcing</strong></p>
+<p>By outsourcing non-strategic processes, an organisation can focus its attention on those things it does best to satisfy the customer. 有精力做自己擅长的</p>
+<p>Other benefits include:</p>
+<p>- cost saving</p>
+<p>- capital conservation</p>
+<p>- performance improvement</p>
+<p>- access to low cost labor and resource</p>
+<p>- benefit from outside expertise</p>
+<p><strong>Risks of Outsourcing</strong></p>
+<p>·         Strategic risk – long term, perhaps irreversible, risk based on a loss of knowledge relayed to core activities</p>
+<p>·         Tactical risk – short term, based on used of supplier for capacity, not knowledge</p>
+<p>·         Increased dependence on supplier for knowledge weakens the buyers relative bargaining power</p>
+<p><strong>Supplier Relationships</strong></p>
+<p>·         Arm’s length 保持距离,适用于routine purchase</p>
+<p>·         Niche – specialised providers</p>
+<p>·         Hybrid – intermediate , cooperative</p>
+<p>·         Full-Service – strategic, committed</p>
+<p><strong>Buyer Skills</strong></p>
+<p>Traditional buyers manage contractual relationships that are clearly defined, with clear expectation and performance measures.</p>
+<p>Outsourcing requires supply professional master creating and managing complex relationship due to the more fluid and less clearly defined supply environment</p>
+<h1 id="WEEK-2-Class-Exercise"><a href="#WEEK-2-Class-Exercise" class="headerlink" title="WEEK 2 Class Exercise"></a>WEEK 2 Class Exercise</h1><p>通过往上peanut butter的supply chain, 我们得到了一个总结：</p>
+<p>Supply chain mapping helps companies:</p>
+<p>·         Improve strategic supply chain relations</p>
+<p>·         Identify inefficiencies</p>
+<p>·         Visualize process for communication</p>
+<p>·         Analyse development of core competencies</p>
+<h1 id="TOPIC-9-Cost-Management"><a href="#TOPIC-9-Cost-Management" class="headerlink" title="TOPIC 9 Cost Management"></a>TOPIC 9 Cost Management</h1><p>·         In business, retail, and accounting, a cost is the value of money that has been used up to produce something, and hence is not available for use anymore. </p>
+<p>·         In economics, a cost is an alternative that is given up as a result of a decision. – 决策的代价</p>
+<p>·         In accounting, costs are the monetary value of expenditures for supplies, services, labour, products, equipment and other items purchased for use by a business or other accounting entity. – 记账时开销的数值</p>
+<p>一个重要的结论：a % changes in cost cutting creates more than the profit of a 5% increase in sales</p>
+<p>Profit Leverage Effect</p>
+<p>·         Measurable cost savings that don’t hurt sales have a tremendous impact on the bottom line. </p>
+<p>·         Profit impact of cost reduction is much greater than the impact of increased sales. </p>
+<p>·         The lower the average profit margin, the greater the impact.</p>
+<p><strong>Strategic cost management</strong> uses cost management techniques to reduce the organisations costs and improve profit while supporting its value proposition. </p>
+<p>Three elements of strategic cost management: </p>
+<p>\1. Supply Chain Analysis </p>
+<p>\2. Value Proposition Analysis </p>
+<p>·         Value proposition analysis is the essence of a corporation strategy, determining how an organisation chooses to compete in its markets.</p>
+<p>\3. Cost Driver Analysis</p>
+<p><strong>Generic Cost Drivers</strong></p>
+<p>·         Level of outsourcing within a company. Companies that outsource may experience higher costs for additional services than if it had internal operations. Overall costs may be lower when demand is erratic. </p>
+<p>·         Use of nonstandard materials, components and parts. Custom items are more costly because of low economies of scale. Custom parts may have better performance or lower operating costs. </p>
+<p>·         Scale of operations. Very large manufacturing operations must have high stable volume. Small manufacturing operations may be unprofitable at high volumes due to overtime costs, inefficiency in operations, machine breakdowns and maintenance issues. </p>
+<p>·         High level of finished goods product mix. The more options the organisation offers its customers, the more inventory it may have to carry, and the more flexible it production operations must be.</p>
+<p><strong>Cost Management Tools</strong></p>
+<p>·         Cost analysis: including “should-cost” analysis or zero-based pricing, as well as analysis of service provider cost elements. </p>
+<p>·         Price analysis: understanding the prices available in the competitive marketplace. </p>
+<p>·         Total cost of ownership: analysing the true cost of acquisition, use, maintenance and disposal of a good, service, capital equipment, or process. </p>
+<p>·         Target costing: determining what the market will bear and working backwards to see how much you can afford to produce the product or service for, and still make a profit</p>
+<p><strong>Decision Classification Matrix</strong></p>
+<p>a decision matrix can be used to determine the appropriate cost management tool</p>
+<p>The decision matrix classifies decisions according to: n </p>
+<p>·         Nature of the Buy </p>
+<p>·         Relationship with Supplier</p>
+<p>   <img src="/2018/07/02/Logistics and SCM/4.png" style="width: 80%;"></p>
+<p>·         <strong>Low Impact – low-cost commodity items; focus is on price analysis/comparison – Price Analysis Focus</strong> </p>
+<p>·         <strong>Leverage – large purchases of items in competitive markets; focus is on cost analysis – Cost Analysis Focus</strong></p>
+<p>·         <strong>Strategic Item – large purchases from important suppliers; focus is on continuous improvement – Continuous Improvement Focus</strong></p>
+<p>·         <strong>Critical Projects – large dollar volume infrequent purchase; focus is on life cycle cost – Life-Cycle Cost Focus</strong></p>
+<p><strong>TCO Total Cost of Ownership – 不能光看acquisition cost（进货），要看整体流程的总成本</strong></p>
+<p>…includes all relevant costs, such as administration, follow-up, expediting, inbound transportation, inspection, and testing, rework, storage, warranty, service, downtime, customer returns, and lost sales.</p>
+<p>·         Attempts to look at the big picture, considering cost beyond that of the purchase price. </p>
+<p>·         a philosophy for understanding all relevant supply chain related costs of doing business with a particular supplier for a particular goods/service, or the cost of the process, e.g. supply chain design.</p>
+<p>TCO Analysis Steps</p>
+<p>Step 1: Identification of Benefits Sought -The first step in TCO analysis is to determine the benefits sought from the analysis.</p>
+<p>Step 2: Form a TCO Team</p>
+<p>Step 3: Identify Cost Drivers</p>
+<p>Step 4: Fine Tune - Step 4 allows for fine tuning of the TCO analysis including the use of sensitivity analysis.</p>
+<p>Step 5: Present - Step 5 requires that the TCO analysis findings be presented to the appropriate management level.</p>
+<h1 id="TOPIC-10-Inventory-Management-–-backlog-or-holding-cost"><a href="#TOPIC-10-Inventory-Management-–-backlog-or-holding-cost" class="headerlink" title="TOPIC 10 Inventory Management – backlog or holding cost"></a>TOPIC 10 Inventory Management – backlog or holding cost</h1><p><strong>Definition</strong></p>
+<p>Inventories are stocks of goods and materials that are maintained to satisfy normal demand patterns</p>
+<p>   <img src="/2018/07/02/Logistics and SCM/5.png" style="width: 80%;"></p>
+<p><strong>Why carry Inventory?</strong> </p>
+<p>·         Provide product availability </p>
+<p>·         Buffer production or acquisition costs </p>
+<p>·         Buffer distribution costs </p>
+<p>·         Hedge against inflation </p>
+<p>·         Protect against uncertainty </p>
+<p>·         Protect against unexpected events</p>
+<p><strong>Inventory Management</strong> </p>
+<p>·         Low inventory turnover = high inventory carrying costs, little (or no) stockout costs 存货堆积，存货成本高，欠货成本低</p>
+<p>·         High inventory turnover = low inventory carrying costs, high stockout costs 没有存货， 存货成本低，欠货成本高</p>
+<p>·         Managing the trade-off (product availability/responsiveness vs. cost/efficiency) is important to maintain service levels</p>
+<p><img src="/2018/07/02/Logistics and SCM/6.png" style="width: 80%;"></p>
+<p><strong>ABC Analysis – AGAIN!</strong></p>
+<p>·         CLASS A Can be controlled statistically. Good forecasting essential. Major stock control effort in this group. Safety stock usually employed, recalculated on frequent basis. Expert market knowledge desirable. </p>
+<p>·         CLASS B Often controlled by computerised methods (materials requirements planning). Good forecasting desirable. Lean stock buffers. Manage by exception where possible </p>
+<p>·         CLASS C Simple methods (two bin … ) may be used. Larger safety stocks allowed. Orders can be less frequent. Simple, often visual controls. Note: n Annual stock usage must be used, not current consumption</p>
+<p><strong>Contemporary Approaches of IM</strong> </p>
+<p>·         ABC Analysis </p>
+<p>·         Just-in Time (JIT) Approach </p>
+<p>·         Vendor-Managed Inventory (VMI) </p>
+<p>VMI employs the same principles as those of JIT inventory, however, the responsibilities of managing inventory is placed with the vendor </p>
+<p>·         Inventory Tracking</p>
+<p><strong>Vendor-Managed Replenishment</strong> </p>
+<p>·         Suppliers actively manage inventory for customers. </p>
+<p>·         Vendor monitors the buyer’s inventory levels (physically or via electronic messaging), makes periodic resupply decisions regarding order quantities, shipping, and timing. </p>
+<p>·         Transactions customarily initiated by the buyer (such as purchase orders) are initiated by the supplier.</p>
+<p>·         Benefits for suppliers - improved demand information; improved ability to allocate productive resources</p>
+<p>·         Benefits for customers - Lower labour and inventory costs; Improved item availability; Improved responsiveness</p>
+<h1 id="TOPIC-11-Safety-Inventory-Managing-Uncertainties"><a href="#TOPIC-11-Safety-Inventory-Managing-Uncertainties" class="headerlink" title="TOPIC 11 Safety Inventory - Managing Uncertainties"></a>TOPIC 11 Safety Inventory - Managing Uncertainties</h1><p><strong>Role of Safety Inventory</strong> </p>
+<p>·         Forecasts are rarely completely accurate </p>
+<p><em>·         If average demand is 1000 units per week, then half the time actual demand will be greater than 1000, and half the time actual demand will be less than 1000; what happens when actual demand is greater than 1000?</em> </p>
+<p><em>·         If you kept only enough inventory in stock to satisfy average demand, half the time you would run out</em> </p>
+<p>·         Safety inventory: Inventory carried for the purpose of satisfying demand that exceeds the amount forecasted in a given period</p>
+<p>·         Safety inventory is carried because product demand and lead time are uncertain and a product shortage may result if actual demand during lead time exceeds the forecast amount.</p>
+<p><strong>Average inventory is therefore cycle inventory plus safety inventory</strong> </p>
+<p>·         it tends to have a negative impact on supply chain cost but a positive impact on supply chain responsiveness/availability </p>
+<p>There is a fundamental <strong>trade-off:</strong>  </p>
+<p>·         Raising the level of safety inventory provides higher levels of product availability and customer service  多备货 availability和customer service得到保障</p>
+<p>·         Raising the level of safety inventory also raises the level of average inventory and therefore increases holding costs 但多备货也会导致holding cost增高</p>
+<p><strong>Level of Safety Inventory</strong> </p>
+<p>·         Measuring demand uncertainty </p>
+<p>o   Higher levels of uncertainty require higher levels of safety inventory given a particular desired level of product availability </p>
+<p>o   Higher levels of desired product availability require higher levels of safety inventory given a particular level of uncertainty</p>
+<p>o   Demand has a systematic component and a random component </p>
+<p>o   The estimate of the random component is the measure of demand uncertainty</p>
+<p>·         Measuring product availability  </p>
+<p>o   Product availability: a firm’s ability to fill a customer’s order out of available inventory </p>
+<p>o   Stockout/backlog: a customer order arrives when product is not available</p>
+<p>·         Replenishment policies </p>
+<p>·         Evaluating cycle service level and fill rate </p>
+<p>·         Evaluating safety level given desired cycle service level or fill rate </p>
+<p>·         Impact of required product availability and uncertainty on safety inventory</p>
+<p><strong>Replenishment Policies</strong> </p>
+<p>Replenishment policy: decisions regarding when to reorder and how much to reorder </p>
+<p>·         Continuous review: inventory is continuously monitored and an order of size Q is placed when the inventory level reaches the reorder point ROP </p>
+<p>·         Periodic review: inventory is checked at regular (periodic) intervals and an order is placed to raise the inventory to a specified threshold (the “order-up-to” level)</p>
+<h1 id="WEEK-3-SEMINAR"><a href="#WEEK-3-SEMINAR" class="headerlink" title="WEEK 3 SEMINAR"></a>WEEK 3 SEMINAR</h1><p>大概的问题是discount is only for short term, overall profit is down…</p>
+<p>Distributors有了折扣了以后，想在折扣时多进货，结果导致库存积压，warehousing cost is even higher than discount</p>
+<p><strong>Trade Promotion</strong></p>
+<p>·         Forward buying: customers move up future purchases to the present. 促销时预购</p>
+<p>·         Trade promotion lead to significant increase in lot size and cycle inventory because of forward buying by the retailer. This generally results in reduced supply chain profits unless the trade promotion reduces demand fluctuation. 促销时囤货</p>
+<p><strong>Objectives of the Manufacturer 厂家为什么要促销呢？</strong> </p>
+<p>·         Induce retailers to use price discounts, displays, or advertising to spur sales. 抛货</p>
+<p>·         Shift inventory from the manufacturer to the retailer and the customer. 清仓</p>
+<p>·         Defend a brand against competition. 跟对手打价格战</p>
+<p><strong>Reaction of the retailer</strong></p>
+<p>\1. Pass through some or all of the promotion to customers to spur sales.  让利给消费者，以便抛货</p>
+<p>\2. Pass through very little of the promotion to customers but purchase in greater quantity during the promotion period to exploit the temporary reduction in price. 并不给消费者让利，只是自己趁着折扣搞点囤货 -&gt;很可能出现堆积的问题</p>
+<p>思考</p>
+<p>·         Faced with a short-term discount, it is optimal to pass through only a fraction of the discount to the customer, keeping the rest for themselves. 让利消费者一部分比较好</p>
+<p>·         Simultaneous, it is optimal for the retailers to increase the purchase lot size and forward buying for future periods. Thus, trade promotions often lead to an increase of cycle inventory in a supply chain without a significant increase in customer demand. 虽然消费者需求没涨，但自己为了多赚差价提前预购，囤货</p>
+<h1 id="TOPIC-13-Performance-Measurement"><a href="#TOPIC-13-Performance-Measurement" class="headerlink" title="TOPIC 13 Performance Measurement"></a>TOPIC 13 Performance Measurement</h1><p><strong>Role of Performance Measurement</strong></p>
+<p>·         When performance is measured, performance improves.</p>
+<p>·         Measurement Creates Understanding</p>
+<p>·         Measurement Drives Behaviour</p>
+<p>·         Measurement Leads to Results</p>
+<p><strong>Traditional Measurement</strong> </p>
+<p>Areas that are essential to measure to accomplish customer service and profitability goals: </p>
+<p>·         Asset Management </p>
+<p>o   Return on Assets</p>
+<p>o   Return on Investment</p>
+<p>·         Cost </p>
+<p>·         Customer Service </p>
+<p>·         Productivity </p>
+<p>o   Productivity is the ratio of total output to total input.</p>
+<p>·         Quality</p>
+<p>o   Measures of quality track the functionality or reliability of a product or service. </p>
+<p>o   Six Sigma targets a quality level which achieves defect rates of less than 3.4 ppm</p>
+<p><strong>Contemporary Supply Chain Measures</strong> </p>
+<p>Measurements consistent with supply chain management core principles emphasise: </p>
+<p>·         Goal alignment </p>
+<p>o   Supply chain managers must align key measures within their own organisation as well as within the supply chain</p>
+<p>·         Customer satisfaction </p>
+<p>o   customer expectation or satisfaction levels</p>
+<p>·         Process integration </p>
+<p>·         Total costs </p>
+<p>o   Total supply chain costs are the sum of all costs incurred in planning, designing, sourcing, making, and delivering a product from raw materials to the final customer.</p>
+<p>·         Inter-organisational collaboration</p>
+<p><strong>Benchmarking</strong></p>
+<p>The formal process of comparing the attributes of one organisation to those of another. Process consists of: </p>
+<p>\1. Define attribute to be benchmarked and identified a best-in-class comparison company.  要比较什么，和谁比</p>
+<p>\2. Document the best-in-class process at strategic and operational levels. Compare with current practice specifying any and all differences. 比出来的结果是什么</p>
+<p>\3. Develop a strategy, complete with specific methods, for adopting best practices. 如何提高</p>
+<p><strong>Benchmarking - Types</strong> </p>
+<p>·         Competitive Benchmarking – evaluating best practices of leading competitors within industry. 和竞争对手比</p>
+<p>·         Non-competitive Benchmarking – evaluating best practices regardless of industry. </p>
+<p>·         Internal Benchmarking - large global firms may find opportunities to disseminate best practices within the organisation. 和自己比</p>
+<h1 id="TOPIC-15-Law-and-Ethics-in-SCM"><a href="#TOPIC-15-Law-and-Ethics-in-SCM" class="headerlink" title="TOPIC 15 Law and Ethics in SCM"></a>TOPIC 15 Law and Ethics in SCM</h1><p><strong>Four Types of Warranties</strong> </p>
+<p>·         Express warranty 说清楚</p>
+<p>·         Implied warranty of merchantability – fully merchantable 可售性</p>
+<p>·         Implied warranty of fitness for a particular purpose 有用，达到用途价值</p>
+<p>·         Warranty of title 名副其实</p>
+<p>Ethics in Supply Chains </p>
+<p>It would be hypocritical to claim to be a ethical firm if it turned a blind to unethical practices by suppliers in the supply chain. In particular: </p>
+<p>·         The use of child labour and forced labour </p>
+<p>·         Production in sweatshops </p>
+<p>·         Violation of the basic rights of workers </p>
+<p>·         Ignoring of health, safety and environmental standards</p>
+<p>例子：Foxconn</p>
+<p>如何解决？Apple 要求Foxconn签订ethical agreement on contract</p>
+<p><strong>Sustainable supply chain management</strong> requires that sustainability criteria be met while maintaining competitiveness through meeting customer needs.</p>
+<h1 id="TOPIC-16-Relationship-Management"><a href="#TOPIC-16-Relationship-Management" class="headerlink" title="TOPIC 16 Relationship Management"></a>TOPIC 16 Relationship Management</h1><p><strong>特别重要，不可能不考</strong></p>
+<p>   <img src="/2018/07/02/Logistics and SCM/7.png" style="width: 80%;"></p>
+<p>第二次出现classification matrix了</p>
+<p>   <img src="/2018/07/02/Logistics and SCM/8.png" style="width: 80%;"></p>
+<p><strong>主要的两种relationships</strong></p>
+<p><strong>一、Transactional Relationships</strong> – should seek to satisfy two objectives 就俩目标</p>
+<p>·         1. Maximum <strong>efficiency</strong> and handling transactions. </p>
+<p>·         2. Good relations, both parties feel they are treated <strong>fairly</strong>.</p>
+<p>·         Focus is on cost </p>
+<p>o   Use of reverse auctions </p>
+<p>o   Managed for efficiency </p>
+<p>o   Global sourcing </p>
+<p>·         Relationships are often transitory </p>
+<p>o   Receive minimal managerial time </p>
+<p>o   Receive minimal assistance </p>
+<p>o   Receive minimal investment</p>
+<p>·         Outcomes</p>
+<p>o   Lower administrative costs </p>
+<p>o   Lower product and/or service costs </p>
+<p>o   Better quality, innovation, and responsiveness </p>
+<p>o   Enhanced technical support</p>
+<p><strong>一般刚开始大家都是比较冷漠的Transactional，后来如果我发现我可以信任你，你可以成为我的伙伴，那么我们的关系就shifting to alliance</strong></p>
+<p><strong>二、Strategic Alliance</strong></p>
+<p>·         Focus is on <strong>coordinating complementary core competencies</strong> </p>
+<p>·         Relationships <strong>are closely scrutinised and carefully managed</strong> </p>
+<p>·         Intensive and open communication supported by linked information systems </p>
+<p>·         Cross-organisational teams drive cooperative planning </p>
+<p>·          Long-term relationships</p>
+<p>·         Factors</p>
+<p>o   Relationship represents a high-value and volume, either in sales or purchases. </p>
+<p>o   SC member represents a large share of the company’s business, either sales or purchases. </p>
+<p>o   Potential partner possesses skills, technology, or another unique aspect that cannot be found elsewhere. </p>
+<p>o   Strategic component, service, or upstream/downstream relationship is affected. </p>
+<p>o   Potential scarcity governs the marketplace</p>
+<p>o   Intensive collaboration can create advantage: better quality, lower costs, shorter cycles, or unique service.</p>
+<p><strong>Supply Chain Relationship Practices  背5个就行</strong></p>
+<p>·         Personal contact - Personal relationships generate goodwill and reduce miscommunication </p>
+<p>·         Clear specifications - Product, process and contract fulfillment specifications should be clearly stated to reduce confusion and ambiguity </p>
+<p>·         Timely payment - Suppliers should be paid as quickly and easily as possible</p>
+<p>·         Equitable treatment - Policies should be applied equally; playing favorites creates suspicion and mistrust, damaging relations. </p>
+<p>·         Training – Appropriate support and training provided to customers and suppliers. </p>
+<p>·         Open communication - Timely information shared via electronic linkages and face-to-face communication is critical</p>
+<p><strong>Strategic Alliance - Benefits</strong> </p>
+<p>·         Focus on individual strengths, potentially leveraging them into core competencies </p>
+<p>·         Manage the chain as a value system, optimising resource usage across the chain </p>
+<p>·         Offer unique product/service packages and one-of-a-kind satisfaction opportunities </p>
+<p>·         Increase flexibility while spreading risk </p>
+<p>·         Learn from SC partners</p>
+<p><strong>Strategic Alliance – Customer Outcomes</strong></p>
+<p>Lower cost</p>
+<p>Improved product quality</p>
+<p>Enhanced responsiveness</p>
+<p>Decreased order fulfillment times</p>
+<p>Innovation</p>
+<p>Improved allocation of scarce resources</p>
+<p><strong>Strategic Alliance – Supplier Outcomes</strong></p>
+<p>Long-term, large volume contracts</p>
+<p>Production stability</p>
+<p>Lower costs</p>
+<p><strong>Keys to Successful Alliances</strong> </p>
+<p>Collaborative/joint efforts n Patience and perseverance n Collaborative continuous improvement n Personal relationships n Collaborative creativity and idea generation n Shared vision and objectives n Cultural fit n <strong>Trust</strong> n Mutual commitment to the relationship n Understanding of each other’s businesses n Mutual dependence n Willingness to be flexible and tailor services</p>
+<p><strong>The Role of Trust and Power</strong></p>
+<p>Trust is the foundation of SCM</p>
+<p>Promotes collaboration, risk taking, information sharing, and shared</p>
+<p>sources</p>
+<p>Real trust exists only when both parties agree that it does</p>
+<p><strong>Negotiation Philosophies</strong></p>
+<p>·         Win-Lose Philosophy</p>
+<p>Fixed value exists in the relationship</p>
+<p>Goal is to capture as much about you as possible</p>
+<p>Pits customer and supplier against each other</p>
+<p>·         Win-Win Philosophy – both must want win-win, and for longer-term</p>
+<p> Synergistic creation of value</p>
+<p> Working together both parties can improve their competitive position and profitability</p>
+<p><img src="/2018/03/11/Java Lab1/Wechat.jpg" style="width: 30%;" alt="Scan the QR code to add me on Wechat"></p>
+
+      
+    </div>
+    
+    
+    
+
+
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Xueying
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://Santanico.github.io/2018/07/02/Logistics and SCM/" title="Logistics and SCM 总结">http://Santanico.github.io/2018/07/02/Logistics and SCM/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/大三/" rel="tag"># 大三</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/29/Information Security and Privacy Law/" rel="next" title="Information Security and Privacy Law">
+                <i class="fa fa-chevron-left"></i> Information Security and Privacy Law
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Xueying" />
+            
+              <p class="site-author-name" itemprop="name">Xueying</p>
+              <p class="site-description motion-element" itemprop="description">This is my space oddity ; )</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/1876394075" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Santanico" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:930008674@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/hahxuey" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/1876394075" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://questionyu.com/" title="Question Yu's Blog" target="_blank">Question Yu's Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://luck-gh.github.io/" title="郭某人的博客" target="_blank">郭某人的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.easybib.com/v2/home" title="EasyBib" target="_blank">EasyBib</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://tutorials.jenkov.com/" title="Jenkov Tutorials" target="_blank">Jenkov Tutorials</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-1-Introduction"><span class="nav-number">1.</span> <span class="nav-text">TOPIC 1 Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-3-Information-Technology-in-a-Supply-Chain"><span class="nav-number">2.</span> <span class="nav-text">TOPIC 3 Information Technology in a Supply Chain</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-4-Customer-Fulfilment"><span class="nav-number">3.</span> <span class="nav-text">TOPIC 4: Customer Fulfilment</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#WEEK-1-SEMINAR"><span class="nav-number">4.</span> <span class="nav-text">WEEK 1 SEMINAR</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-5-Order-Fulfilment-–-Purchasing-Operations-and-Logistics"><span class="nav-number">5.</span> <span class="nav-text">TOPIC 5 Order Fulfilment – Purchasing, Operations, and Logistics</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-6-Supply-Chain-Mapping"><span class="nav-number">6.</span> <span class="nav-text">TOPIC 6 Supply Chain Mapping</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-7-Core-Competencies-and-Outsourcing"><span class="nav-number">7.</span> <span class="nav-text">TOPIC 7 Core Competencies and Outsourcing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#WEEK-2-Class-Exercise"><span class="nav-number">8.</span> <span class="nav-text">WEEK 2 Class Exercise</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-9-Cost-Management"><span class="nav-number">9.</span> <span class="nav-text">TOPIC 9 Cost Management</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-10-Inventory-Management-–-backlog-or-holding-cost"><span class="nav-number">10.</span> <span class="nav-text">TOPIC 10 Inventory Management – backlog or holding cost</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-11-Safety-Inventory-Managing-Uncertainties"><span class="nav-number">11.</span> <span class="nav-text">TOPIC 11 Safety Inventory - Managing Uncertainties</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#WEEK-3-SEMINAR"><span class="nav-number">12.</span> <span class="nav-text">WEEK 3 SEMINAR</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-13-Performance-Measurement"><span class="nav-number">13.</span> <span class="nav-text">TOPIC 13 Performance Measurement</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-15-Law-and-Ethics-in-SCM"><span class="nav-number">14.</span> <span class="nav-text">TOPIC 15 Law and Ethics in SCM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TOPIC-16-Relationship-Management"><span class="nav-number">15.</span> <span class="nav-text">TOPIC 16 Relationship Management</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xueying</span>
+
+  
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
+  Visitors: <span id="busuanzi_value_site_pv"></span>
+</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count"> |  Word Count: 46.5k words</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'IRN3VNw9uj0AvsjUzaUKdMUU-gzGzoHsz',
+        appKey: 'MkXzEt3Ov20Cwdj91Ami5ghe',
+        placeholder: 'Just leave anything you like :)',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("k29LLcPEKEGxMWVDDJtKArkJ-gzGzoHsz", "K0RuaLfKm3AmLfBmGNItrQGI");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+  </body>
+</html>
