@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-07-02T07:48:47.417Z</updated>
+  <updated>2018-07-16T14:28:52.477Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>区块链踩水</title>
+    <link href="http://Santanico.github.io/2018/07/16/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    <id>http://Santanico.github.io/2018/07/16/区块链/</id>
+    <published>2018-07-16T14:06:01.000Z</published>
+    <updated>2018-07-16T14:28:52.477Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第一次group meeting听学长们讲自己的作品，其他都大概能明白是什么意思，但是智能合约这个概念，我一点都不理解，遂积累一下学到的理论知识和概念。&lt;/p&gt;
+&lt;h3 id=&quot;智能合约-Smart-Contracts-：CODE-AS-LAW&quot;&gt;&lt;a href=&quot;#智能合约-Smart-Contracts-：CODE-AS-LAW&quot; class=&quot;headerlink&quot; title=&quot;智能合约(Smart Contracts)：CODE AS LAW&quot;&gt;&lt;/a&gt;智能合约(Smart Contracts)：CODE AS LAW&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
+    
+    
+      <category term="大三" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%B8%89/"/>
+    
+      <category term="AI" scheme="http://Santanico.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>Logistics and SCM 总结</title>
@@ -61,7 +84,7 @@
     <link href="http://Santanico.github.io/2018/06/12/DeeCamp2018%E7%AC%94%E8%AF%95%E9%A2%98%E7%AC%AC%E4%B8%80%E5%A5%97A%E5%8D%B7/"/>
     <id>http://Santanico.github.io/2018/06/12/DeeCamp2018笔试题第一套A卷/</id>
     <published>2018-06-12T03:24:21.000Z</published>
-    <updated>2018-06-12T13:48:50.295Z</updated>
+    <updated>2018-07-16T14:09:12.166Z</updated>
     
     <summary type="html">
     
@@ -440,31 +463,6 @@
       &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
 &lt;h3 id=&quot;目标：二叉树及其应用。&quot;&gt;&lt;a href=&quot;#目标：二叉树及其应用。&quot; class=&quot;headerlink&quot; title=&quot;目标：二叉树及其应用。&quot;&gt;&lt;/a&gt;目标：二叉树及其应用。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;(1)  用先序递归过程建立二叉树 (存储结构：二叉链表)&lt;br&gt;输入数据按先序遍历所得序列输入，当某结点左子树或右子树为空时，输入‘&lt;em&gt;’号，如输入abc&lt;strong&gt;d&lt;/strong&gt;e*&lt;/em&gt;得到的二叉树为：（图片如课件）&lt;br&gt;(2)  计算二叉树中叶子结点的数目。&lt;/p&gt;
 &lt;h3 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;p&gt;这篇因为我日常得写两份，所以自己的那份干脆用c++，给别人的那份是c，所以建议直接看第二份。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
-    
-    
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大二下 数据结构（三）</title>
-    <link href="http://Santanico.github.io/2018/02/06/%E5%A4%A7%E4%BA%8C%E4%B8%8B%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-    <id>http://Santanico.github.io/2018/02/06/大二下 数据结构（三）/</id>
-    <published>2018-02-06T13:20:26.000Z</published>
-    <updated>2018-05-06T06:20:28.523Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
-&lt;h3 id=&quot;目标：线性表在链式存储结构的实现。&quot;&gt;&lt;a href=&quot;#目标：线性表在链式存储结构的实现。&quot; class=&quot;headerlink&quot; title=&quot;目标：线性表在链式存储结构的实现。&quot;&gt;&lt;/a&gt;目标：线性表在链式存储结构的实现。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;已知某线性表中的数据元素由三个数据项（学号、姓名、成绩）组成，且数据元素按照学号递增有序，表长为n。选择带头结点的单链表作为存储结构。设计并实现如下算法：&lt;br&gt;（1） n个数据元素作为初始数据，置入相应的存储结构中。(测试时至少10个数据元素），输出线性表中各数据元素。&lt;br&gt;（2）将新的数据元素x插入到线性表的适当位置上，以保持该表的有序性，输出线性表中各数据元素。&lt;br&gt;
     
     </summary>
     
