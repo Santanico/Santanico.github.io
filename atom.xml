@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-07-16T14:28:52.477Z</updated>
+  <updated>2018-09-29T07:13:06.268Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>I&#39;m back~打好大三这一年的信息战</title>
+    <link href="http://Santanico.github.io/2018/09/29/%E5%A4%A7%E5%9B%9B%E5%9B%9E%E5%BD%92%E6%96%87/"/>
+    <id>http://Santanico.github.io/2018/09/29/大四回归文/</id>
+    <published>2018-09-29T03:39:35.000Z</published>
+    <updated>2018-09-29T07:13:06.268Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;老学姐对大三这一年的总结，文末附各学科资源（国院）。&lt;/p&gt;
+&lt;p&gt;Part 1: 保研/直博，都是“信息战”与“沟通牌”&lt;br&gt;Part 2: 发论文不仅能保研加分，还能为申请提高软实力&lt;br&gt;Part 3: 好好上课不仅会得高分，还意味着推荐信轻松到手&lt;br&gt;Part 4: 幸存者偏差，别听某些中介瞎忽悠&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Living" scheme="http://Santanico.github.io/categories/Living/"/>
+    
+    
+      <category term="大四" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E5%9B%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>区块链踩水</title>
     <link href="http://Santanico.github.io/2018/07/16/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
     <id>http://Santanico.github.io/2018/07/16/区块链/</id>
     <published>2018-07-16T14:06:01.000Z</published>
-    <updated>2018-07-16T14:28:52.477Z</updated>
+    <updated>2018-07-17T06:42:07.569Z</updated>
     
     <summary type="html">
     
@@ -132,7 +153,7 @@
     <link href="http://Santanico.github.io/2018/05/06/%E7%AB%99%E9%95%BF%E6%97%A5%E5%BF%97/"/>
     <id>http://Santanico.github.io/2018/05/06/站长日志/</id>
     <published>2018-05-06T06:39:08.000Z</published>
-    <updated>2018-07-16T15:08:45.447Z</updated>
+    <updated>2018-09-29T04:23:04.971Z</updated>
     
     <summary type="html">
     
@@ -437,32 +458,6 @@
       &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
 &lt;h3 id=&quot;目标：掌握排序和折半查找算法。&quot;&gt;&lt;a href=&quot;#目标：掌握排序和折半查找算法。&quot; class=&quot;headerlink&quot; title=&quot;目标：掌握排序和折半查找算法。&quot;&gt;&lt;/a&gt;目标：掌握排序和折半查找算法。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;查找表是学生记录的集合，记录由如下数据项组成：&lt;br&gt;  （学号，姓名，数据结构课程成绩）&lt;br&gt;(1)用冒泡排序方法对查找表按照成绩非递减排序&lt;br&gt;(2)基于折半查找的方法对指定成绩的记录查找，输出查找成功的记录在有序序列中的位序及其完整记录内容或者说明查找失败。&lt;/p&gt;
 &lt;h3 id=&quot;测试实例：&quot;&gt;&lt;a href=&quot;#测试实例：&quot; class=&quot;headerlink&quot; title=&quot;测试实例：&quot;&gt;&lt;/a&gt;测试实例：&lt;/h3&gt;&lt;p&gt;(1) 成绩排列为{50  94  65  97  78  81  83  76  88  92  78}，对应的学号和姓名项自行拟值&lt;br&gt;(2) 查找成绩分别为 78和89 的记录&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
-    
-    
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大二下 数据结构（四）</title>
-    <link href="http://Santanico.github.io/2018/02/06/%E5%A4%A7%E4%BA%8C%E4%B8%8B%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
-    <id>http://Santanico.github.io/2018/02/06/大二下 数据结构（四）/</id>
-    <published>2018-02-06T13:24:16.000Z</published>
-    <updated>2018-05-06T06:20:24.972Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
-&lt;h3 id=&quot;目标：二叉树及其应用。&quot;&gt;&lt;a href=&quot;#目标：二叉树及其应用。&quot; class=&quot;headerlink&quot; title=&quot;目标：二叉树及其应用。&quot;&gt;&lt;/a&gt;目标：二叉树及其应用。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;(1)  用先序递归过程建立二叉树 (存储结构：二叉链表)&lt;br&gt;输入数据按先序遍历所得序列输入，当某结点左子树或右子树为空时，输入‘&lt;em&gt;’号，如输入abc&lt;strong&gt;d&lt;/strong&gt;e*&lt;/em&gt;得到的二叉树为：（图片如课件）&lt;br&gt;(2)  计算二叉树中叶子结点的数目。&lt;/p&gt;
-&lt;h3 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;p&gt;这篇因为我日常得写两份，所以自己的那份干脆用c++，给别人的那份是c，所以建议直接看第二份。&lt;br&gt;
     
     </summary>
     
