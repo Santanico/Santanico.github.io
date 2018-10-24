@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xueying&#39;s Node of Complex Networks</title>
+  <title>Xueying&#39;s Node</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-10-24T04:25:49.710Z</updated>
+  <updated>2018-10-24T10:02:47.082Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SHA-1:大坨变小坨的神秘哈希算法</title>
+    <link href="http://Santanico.github.io/2018/10/24/SHA1/"/>
+    <id>http://Santanico.github.io/2018/10/24/SHA1/</id>
+    <published>2018-10-24T08:51:09.000Z</published>
+    <updated>2018-10-24T10:02:47.082Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;还没开始写呢&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
+    
+    
+      <category term="大四" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E5%9B%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>Impostor Syndrome and Self-doubt</title>
@@ -441,32 +461,6 @@
     
       &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
 &lt;h3 id=&quot;目标：线性表在顺序存储结构的实现。&quot;&gt;&lt;a href=&quot;#目标：线性表在顺序存储结构的实现。&quot; class=&quot;headerlink&quot; title=&quot;目标：线性表在顺序存储结构的实现。&quot;&gt;&lt;/a&gt;目标：线性表在顺序存储结构的实现。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;已知某线性表中的数据元素由三个数据项（学号、姓名、成绩）组成，且数据元素按照学号递增有序，表长为n。选择顺序表 作为存储结构。设计并实现如下算法：&lt;br&gt;（1）n个数据元素作为初始数据，置入相应的存储结构中。(测试时至少10个数据元素），输出线性表中各数据元素。&lt;br&gt;（2）将新的数据元素x插入到线性表的适当位置上，以保持该表的有序性，输出线性表中各数据元素。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
-    
-    
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
-      <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大二下 数据结构（一）</title>
-    <link href="http://Santanico.github.io/2018/02/06/%E5%A4%A7%E4%BA%8C%E4%B8%8B%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://Santanico.github.io/2018/02/06/大二下 数据结构（一）/</id>
-    <published>2018-02-06T12:56:30.000Z</published>
-    <updated>2018-05-06T06:20:17.483Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
-&lt;h3 id=&quot;目标：复习C语言的相关知识：&quot;&gt;&lt;a href=&quot;#目标：复习C语言的相关知识：&quot; class=&quot;headerlink&quot; title=&quot;目标：复习C语言的相关知识：&quot;&gt;&lt;/a&gt;目标：复习C语言的相关知识：&lt;/h3&gt;&lt;p&gt;（1）数组（顺序存储方法）&lt;br&gt;（2）结构（构造多数据项的数据元素类型）  &lt;/p&gt;
-&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;（1）定义student[n]数组，数组元素为（学号、姓名、成绩），n取值10。&lt;br&gt;（2）向数组中读入原始数据，其中有重复学号的数据，输出原始的数组数据。&lt;br&gt;（3）删除有重复学号的数据（保留第一个），输出处理后的数组数据。&lt;br&gt;
     
     </summary>
     
