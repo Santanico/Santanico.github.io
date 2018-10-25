@@ -99,7 +99,7 @@
 <meta property="og:image" content="http://santanico.github.io/2018/10/24/SHA1/80steps.PNG">
 <meta property="og:image" content="http://santanico.github.io/2018/10/24/SHA1/compute.PNG">
 <meta property="og:image" content="http://santanico.github.io/2018/10/24/SHA1/final.PNG">
-<meta property="og:updated_time" content="2018-10-25T05:20:19.159Z">
+<meta property="og:updated_time" content="2018-10-25T05:28:27.149Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SHA-1:大坨变小坨的神秘哈希算法">
 <meta name="twitter:description" content="小韩同学上安全与认证课时听懵了，尤其是logical functions那块的操作，什么乱七八糟的玩意儿啊？？于是课后自己调研一下写一篇笔记。 本文参考了IETF RFC3174, FIPS PUB 180-4两篇官方文档，以及两个Youtube上的tutorials，credit见文末。">
@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,191
+                  1,182
                 </span>
               
 
@@ -475,49 +475,35 @@
 <li>process message in 512-bit blocks</li>
 <li>output: 160 bits</li>
 </ol>
-<h5 id="PRE-PROCESSING"><a href="#PRE-PROCESSING" class="headerlink" title="PRE-PROCESSING"></a>PRE-PROCESSING</h5><ol>
-<li>Padding the Message</li>
-</ol>
+<h5 id="PRE-PROCESSING"><a href="#PRE-PROCESSING" class="headerlink" title="PRE-PROCESSING"></a>PRE-PROCESSING</h5><p>1.Padding the Message</p>
 <p>The purpose of this padding is to ensure that the padded message is a multiple of 512 or 1024 bits, depending on the algorithm. –&gt;只有补位变成合适的长度才可以放进“容器”进行运算。</p>
 <p><img src="/2018/10/24/SHA1/padding.PNG" style="width: 90%;"></p>
 <p>对于任意长度的明文，SHA1首先对其进行分组，使得每一组的长度为512位，然后对这些明文分组反复重复处理。对于最后一组明文，往往长度小于512位，所以我们要补齐到512位才能做运算。由于明文的最后64位要预留来记录总长度，所以对于剩下的部分（原文和长度位的中间部分），我们在最左边补一个1，其余位补0。上课的时候老师没说最后64位的问题，但看课件上的图在100…0之后还有一小段粉红色，其实就是那64位长度位。</p>
-<ol>
-<li>Parsing the Message</li>
-</ol>
+<p>2.Parsing the Message</p>
 <p>The message and its padding must be parsed into N 32-bit blocks. </p>
 <p><img src="/2018/10/24/SHA1/parsing.PNG" style="width: 90%;"></p>
 <p>对于每一份512-bit的明文，划分为16个子明文分组M[0…16]，每个子明文分组为32位。毕竟要用的是32位的寄存器嘛。</p>
-<ol>
-<li>Setting the Initial Hash Value H(0)</li>
-</ol>
+<p>3.Setting the Initial Hash Value H(0)</p>
 <p>Before hash computation begins for each of the secure hash algorithms, the initial hash value, H(0), must be set. </p>
 <p><img src="/2018/10/24/SHA1/cycle.PNG" style="width: 90%;"></p>
 <p>因为哈希算法都是头尾相接的，上一轮的结果要参与下一轮的运算，然而在做第一轮运算时我们并没有previous results，因为定义初始变量组。</p>
 <h5 id="ALGORITHMS-PROCESSINGS"><a href="#ALGORITHMS-PROCESSINGS" class="headerlink" title="ALGORITHMS, PROCESSINGS"></a>ALGORITHMS, PROCESSINGS</h5><p><img src="/2018/10/24/SHA1/subblock.PNG" style="width: 90%;"></p>
 <p><img src="/2018/10/24/SHA1/2018-10-25 123431.png" style="width: 90%;"></p>
-<ol>
-<li>Sub-block, Words</li>
-</ol>
+<p>1.Sub-block, Words</p>
 <p>我们一共要进行80轮运算，意味着我们可能需要80组明文，而在一开始我们只分出了16组明文M[0…15]，所以我们在这一步要把16组明文扩充成80组。</p>
 <p>在运算中我们使用5个变量a, b, c, d, e，都是由5个寄存器A,B,C,D,E,运算所得。</p>
 <p>扩充过程如下：80组中的前16组直接用M[0…15]代替，后边第17到80组调用Wt函数计算。</p>
-<p><img src="/2018/10/24/SHA1/sub1.PNG" style="width: 90%;"></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">扩充过程</span><br><span class="line"><span class="keyword">for</span> each chunk</span><br><span class="line">    <span class="keyword">break</span> chunk into sixteen <span class="number">32</span>-bit big-endian words w[i], <span class="number">0</span> ≤ i ≤ <span class="number">15</span></span><br><span class="line"></span><br><span class="line">    Extend the sixteen <span class="number">32</span>-bit words into eighty <span class="number">32</span>-bit words:</span><br><span class="line">    <span class="keyword">for</span> i from <span class="number">16</span> to <span class="number">79</span></span><br><span class="line">        w[i] = (w[i<span class="number">-3</span>] xor w[i<span class="number">-8</span>] xor w[i<span class="number">-14</span>] xor w[i<span class="number">-16</span>]) leftrotate <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/10/24/SHA1/sub1.PNG" style="width: 70%;"></p>
 <p><img src="/2018/10/24/SHA1/2018-10-25 124418.png" style="width: 90%;"></p>
-<ol>
-<li>80 Steps using f1 to f4</li>
-</ol>
-<p><img src="/2018/10/24/SHA1/80steps.PNG" style="width: 90%;"></p>
+<p>2.80 Steps</p>
+<p><img src="/2018/10/24/SHA1/80steps.PNG" style="width: 60%;"></p>
 <p>生成好80组明文之后，我们就可以应用到后续的80次操作啦，这乱七八糟的运算过程真是让我不禁感谢伟大计算机…运算过程看得我眼花缭乱，所幸这种没有多大意义的过程压根不需要记住，连自己动手算一下都不用…</p>
 <p>我上课的时候就非常懵逼，我不懂80个32位明文怎么放进5个32位寄存器啊？？？调研的时候才发现，那80个明文是为了80次运算准备的，每次运算A,B,C,D,E这一组寄存器依据算法只调用1个32位的明文。</p>
-<ol>
-<li>Compute the intermediate, referring the first slide above.</li>
-</ol>
-<p><img src="/2018/10/24/SHA1/compute.PNG" style="width: 90%;"></p>
+<p>3.Compute the intermediate, referring the first slide above.</p>
+<p><img src="/2018/10/24/SHA1/compute.PNG" style="width: 60%;"></p>
 <p>做完80次运算之后，我们还要把结果和初始变量组（或者上一轮的结果）做“+”运算。</p>
-<ol>
-<li>Final hash value</li>
-</ol>
+<p>4.Final hash value</p>
 <p><img src="/2018/10/24/SHA1/final.PNG" style="width: 90%;"></p>
 <p>做完第三步之后，我们刚刚处理完第一个512-bit明文，我们还要继续处理接下来的N个512-bit明文，当最后一个512-bit明文处理完之后，就得到了最后5✖32位的结果。</p>
 <h5 id="WHY"><a href="#WHY" class="headerlink" title="WHY"></a>WHY</h5><p>1.Every bit of hash code is a function of every bit of the input.</p>
@@ -525,7 +511,7 @@
 <p>2.It is unlikely that two messages chosen at random will have the same hash code. </p>
 <p>3.It is infeasible to produce two different messages having the same message digest. </p>
 <p>后两条就是保证collision resistance, preimage resistance and second preimage resistance。</p>
-<div class="note info"><p>Reference:<br><a href="https://www.youtube.com/watch?v=kmHojGMUn0Q" target="_blank" rel="noopener">How Does SHA-1 Work - Intro to Cryptographic Hash Functions and SHA-1</a><br><a href="https://www.youtube.com/watch?v=E4FL9Tv-X-k" target="_blank" rel="noopener">sha1 tutorial how sha1 works secure hash algorithm tutorial</a><br><a href="https://tools.ietf.org/html/rfc3174" target="_blank" rel="noopener">IETF: US Secure Hash Algorithm 1 (SHA1)</a><br><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf" target="_blank" rel="noopener">FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION: Secure Hash Standard (SHS) </a><br><a href="https://www.cnblogs.com/scu-cjx/p/6878853.html" target="_blank" rel="noopener">SHA1算法原理</a></p></div> 
+<div class="note info"><p>Reference:<br><a href="https://www.youtube.com/watch?v=kmHojGMUn0Q" target="_blank" rel="noopener">How Does SHA-1 Work - Intro to Cryptographic Hash Functions and SHA-1</a><br><a href="https://www.youtube.com/watch?v=E4FL9Tv-X-k" target="_blank" rel="noopener">sha1 tutorial how sha1 works secure hash algorithm tutorial</a><br><a href="https://tools.ietf.org/html/rfc3174" target="_blank" rel="noopener">IETF: US Secure Hash Algorithm 1 (SHA1)</a><br><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf" target="_blank" rel="noopener">FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION: Secure Hash Standard (SHS) </a></p></div> 
 
       
     </div>
