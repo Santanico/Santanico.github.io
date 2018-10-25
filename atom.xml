@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-10-25T05:28:27.149Z</updated>
+  <updated>2018-10-25T05:34:06.066Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -21,12 +21,11 @@
     <link href="http://Santanico.github.io/2018/10/24/SHA1/"/>
     <id>http://Santanico.github.io/2018/10/24/SHA1/</id>
     <published>2018-10-24T08:51:09.000Z</published>
-    <updated>2018-10-25T05:28:27.149Z</updated>
+    <updated>2018-10-25T05:34:06.066Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;小韩同学上安全与认证课时听懵了，尤其是logical functions那块的操作，什么乱七八糟的玩意儿啊？？于是课后自己调研一下写一篇笔记。&lt;/p&gt;
-&lt;p&gt;本文参考了IETF RFC3174, FIPS PUB 180-4两篇官方文档，以及两个Youtube上的tutorials，credit见文末。&lt;/p&gt;
+      &lt;p&gt;小韩同学上安全与认证课时听懵了，尤其是logical functions那块的操作，什么乱七八糟的玩意儿啊？？于是课后自己调研一下写一篇笔记。&lt;br&gt;本文参考了IETF RFC3174, FIPS PUB 180-4两篇官方文档，以及两个Youtube上的tutorials，credit见文末。&lt;/p&gt;
     
     </summary>
     
