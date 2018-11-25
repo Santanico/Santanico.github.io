@@ -97,7 +97,7 @@
 <meta property="og:image" content="http://santanico.github.io/2018/05/06/站长日志/forum2.PNG">
 <meta property="og:image" content="http://santanico.github.io/2018/05/06/站长日志/apple-touch-icon-next.png">
 <meta property="og:image" content="http://santanico.github.io/2018/03/11/Java%20Lab1/Wechat.jpg">
-<meta property="og:updated_time" content="2018-09-29T04:23:04.971Z">
+<meta property="og:updated_time" content="2018-11-25T11:23:12.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="站长日志">
 <meta name="twitter:description" content="建站这几个月以来…从网站内容上来看，这个网站起初只是为了记录我在本科阶段的学习过程，尽可能地分享我积累下的学习经历和资源，受众非常局限，可能外人根本不理解我写的都是些什么玩意儿。但现在过去三个月了，对我自己来说受益匪浅。">
@@ -422,7 +422,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,597
+                  1,847
                 </span>
               
 
@@ -438,7 +438,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  6
+                  7
                 </span>
               
             </div>
@@ -462,7 +462,14 @@
         <h3 id="建站这几个月以来…"><a href="#建站这几个月以来…" class="headerlink" title="建站这几个月以来…"></a>建站这几个月以来…</h3><p>从网站内容上来看，这个网站起初只是为了记录我在本科阶段的学习过程，尽可能地分享我积累下的学习经历和资源，受众非常局限，可能外人根本不理解我写的都是些什么玩意儿。但现在过去三个月了，对我自己来说受益匪浅。<br><a id="more"></a><br>首先是自身专业素养上，得益于此站，经常可以接触到不同系的同学，一起讨论某些课程课业，或者互相答疑解惑；而我的大佬学长 - <a href="https://questionyu.com/" target="_blank" rel="noopener">问少的小站</a> - 也给予我各方面的指导，甚至在留言中指出文章中某些问题更好的解决方法，非常感谢！！</p>
 <p>再者是建站过程中，不仅学到了一些没接触过的知识，在交流群中结识了几位小伙伴，有从事近3年Java后台系统开发的培训师，还有和我同一届学嵌入式的郭同学 - <a href="https://luck-gh.github.io/" target="_blank" rel="noopener">郭某人的博客</a> - 交流学习上的事情…</p>
 <p>建站以来更新的19篇文章，基本上都是课业上的作业，我决定不在这么闭塞了，学点什么都来更新一下，希望未来内容上能越来越好。也希望自己的网站能越来越个性化，所以决定从今天开始写站长日志，记录小站的进步。</p>
-<h3 id="网站更新"><a href="#网站更新" class="headerlink" title="网站更新"></a>网站更新</h3><h4 id="2018-07-16"><a href="#2018-07-16" class="headerlink" title="2018.07.16"></a>2018.07.16</h4><h5 id="gt-修复评论区只显示评论数不显示内容的bug"><a href="#gt-修复评论区只显示评论数不显示内容的bug" class="headerlink" title="&gt; 修复评论区只显示评论数不显示内容的bug"></a>&gt; 修复评论区只显示评论数不显示内容的bug</h5><p>我的网站有两个基于leancloud的应用，一个是访问量统计counter，另一个是基于valine的评论系统blog，期末考完试突然发现评论系统异常，只显示数量不显示具体评论内容，恰逢valine更新，于是去留言区提问了开发者。</p>
+<h3 id="网站更新"><a href="#网站更新" class="headerlink" title="网站更新"></a>网站更新</h3><h4 id="2018-11-25"><a href="#2018-11-25" class="headerlink" title="2018.11.25"></a>2018.11.25</h4><h5 id="gt-修复底部访问量无法显示的问题"><a href="#gt-修复底部访问量无法显示的问题" class="headerlink" title="&gt; 修复底部访问量无法显示的问题"></a>&gt; 修复底部访问量无法显示的问题</h5><p>突然发现footer中的访问量不显示了，而且我的小站关于计数这块的应用我也想不起来是卜算子还是LeanCloud了… 所以只好自己瞎翻翻文件，找到卜算子那块的代码搜了一下，然后发现有人跟我有一样的问题：</p>
+<blockquote>
+<p>由于定位到是不蒜子统计功能突然有问题了，所以前往不蒜子官网进行查看，发现官网有一段很重要的提示：<br>“因七牛强制过期『dn-lbstatics.qbox.me』域名，与客服沟通无果，只能更换域名到『busuanzi.ibruce.info』！”<br>所以定位到问题，原来是不蒜子使用的七牛的域名被强制过期。</p>
+<h2 id="需要把-dn-lbstatics-qbox-me-域名更换为-busuanzi-ibruce-info"><a href="#需要把-dn-lbstatics-qbox-me-域名更换为-busuanzi-ibruce-info" class="headerlink" title="需要把 dn-lbstatics.qbox.me 域名更换为 busuanzi.ibruce.info"></a>需要把 dn-lbstatics.qbox.me 域名更换为 busuanzi.ibruce.info</h2></blockquote>
+<p>于是修改了footer.swig顶部：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>重新d -g，一切恢复正常。</p>
+<h4 id="2018-07-16"><a href="#2018-07-16" class="headerlink" title="2018.07.16"></a>2018.07.16</h4><h5 id="gt-修复评论区只显示评论数不显示内容的bug"><a href="#gt-修复评论区只显示评论数不显示内容的bug" class="headerlink" title="&gt; 修复评论区只显示评论数不显示内容的bug"></a>&gt; 修复评论区只显示评论数不显示内容的bug</h5><p>我的网站有两个基于leancloud的应用，一个是访问量统计counter，另一个是基于valine的评论系统blog，期末考完试突然发现评论系统异常，只显示数量不显示具体评论内容，恰逢valine更新，于是去留言区提问了开发者。</p>
 <p><img src="/2018/05/06/站长日志/forum.PNG" style="width: 90%;"></p>
 <p>然后闲下来了我看了一下leancloud后台，发现counter这个应用不知道为毛线多了一个class叫comment（counter只负责统计访问量，要comment有何用），blog应用下本来也有个comment class，导致valine初始化的时候冲突，我觉得两个各司其职分开比较好，没有采用开发者的建议，直接把counter下的comment class 删掉了。</p>
 <p><img src="/2018/05/06/站长日志/blog.PNG" style="width: 40%;"><img src="/2018/05/06/站长日志/comment.PNG" style="width: 40%;"></p>
@@ -793,7 +800,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#建站这几个月以来…"><span class="nav-number">1.</span> <span class="nav-text">建站这几个月以来…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站更新"><span class="nav-number">2.</span> <span class="nav-text">网站更新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-07-16"><span class="nav-number">2.1.</span> <span class="nav-text">2018.07.16</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修复评论区只显示评论数不显示内容的bug"><span class="nav-number">2.1.1.</span> <span class="nav-text">&gt; 修复评论区只显示评论数不显示内容的bug</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-05-09"><span class="nav-number">2.2.</span> <span class="nav-text">2018.05.09</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修改封面照片。忽然发现Avatar和Gravatar不太一致呢，换个好看的。"><span class="nav-number">2.2.1.</span> <span class="nav-text">&gt; 修改封面照片。忽然发现Avatar和Gravatar不太一致呢，换个好看的。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修改Safari收藏夹icon。修改default-apple-touch-icon，换成了一只猫在篮子里的icon，和我的favicon相呼应"><span class="nav-number">2.2.2.</span> <span class="nav-text">&gt; 修改Safari收藏夹icon。修改default apple-touch-icon，换成了一只猫在篮子里的icon，和我的favicon相呼应~</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-05-06"><span class="nav-number">2.3.</span> <span class="nav-text">2018.05.06</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-分享功能：前几天突然发现网站文章后的JiaThis分享链接失效了，今天看了一眼官网…"><span class="nav-number">2.3.1.</span> <span class="nav-text">&gt; 分享功能：前几天突然发现网站文章后的JiaThis分享链接失效了，今天看了一眼官网…</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-文章排序：上一次想搞排序不记得是什么时候了，然后莫名其妙就搁浅了？因为我同时在更新大二下和大三下的内容，想把大二下的内容搞到下边去，优先显示大三…"><span class="nav-number">2.3.2.</span> <span class="nav-text">&gt; 文章排序：上一次想搞排序不记得是什么时候了，然后莫名其妙就搁浅了？因为我同时在更新大二下和大三下的内容，想把大二下的内容搞到下边去，优先显示大三…</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-设置默认front-matter。既然现在我的头部配置多了comments-copyright-top-tags-categories，不如直接修改默认post模板，省的复制粘贴了。"><span class="nav-number">2.3.3.</span> <span class="nav-text">&gt; 设置默认front-matter。既然现在我的头部配置多了comments, copyright, top, tags, categories，不如直接修改默认post模板，省的复制粘贴了。</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#建站这几个月以来…"><span class="nav-number">1.</span> <span class="nav-text">建站这几个月以来…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站更新"><span class="nav-number">2.</span> <span class="nav-text">网站更新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-11-25"><span class="nav-number">2.1.</span> <span class="nav-text">2018.11.25</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修复底部访问量无法显示的问题"><span class="nav-number">2.1.1.</span> <span class="nav-text">&gt; 修复底部访问量无法显示的问题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需要把-dn-lbstatics-qbox-me-域名更换为-busuanzi-ibruce-info"><span class="nav-number"></span> <span class="nav-text">需要把 dn-lbstatics.qbox.me 域名更换为 busuanzi.ibruce.info</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-07-16"><span class="nav-number">0.1.</span> <span class="nav-text">2018.07.16</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修复评论区只显示评论数不显示内容的bug"><span class="nav-number">0.1.1.</span> <span class="nav-text">&gt; 修复评论区只显示评论数不显示内容的bug</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-05-09"><span class="nav-number">0.2.</span> <span class="nav-text">2018.05.09</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修改封面照片。忽然发现Avatar和Gravatar不太一致呢，换个好看的。"><span class="nav-number">0.2.1.</span> <span class="nav-text">&gt; 修改封面照片。忽然发现Avatar和Gravatar不太一致呢，换个好看的。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-修改Safari收藏夹icon。修改default-apple-touch-icon，换成了一只猫在篮子里的icon，和我的favicon相呼应"><span class="nav-number">0.2.2.</span> <span class="nav-text">&gt; 修改Safari收藏夹icon。修改default apple-touch-icon，换成了一只猫在篮子里的icon，和我的favicon相呼应~</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-05-06"><span class="nav-number">0.3.</span> <span class="nav-text">2018.05.06</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-分享功能：前几天突然发现网站文章后的JiaThis分享链接失效了，今天看了一眼官网…"><span class="nav-number">0.3.1.</span> <span class="nav-text">&gt; 分享功能：前几天突然发现网站文章后的JiaThis分享链接失效了，今天看了一眼官网…</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-文章排序：上一次想搞排序不记得是什么时候了，然后莫名其妙就搁浅了？因为我同时在更新大二下和大三下的内容，想把大二下的内容搞到下边去，优先显示大三…"><span class="nav-number">0.3.2.</span> <span class="nav-text">&gt; 文章排序：上一次想搞排序不记得是什么时候了，然后莫名其妙就搁浅了？因为我同时在更新大二下和大三下的内容，想把大二下的内容搞到下边去，优先显示大三…</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gt-设置默认front-matter。既然现在我的头部配置多了comments-copyright-top-tags-categories，不如直接修改默认post模板，省的复制粘贴了。"><span class="nav-number">0.3.3.</span> <span class="nav-text">&gt; 设置默认front-matter。既然现在我的头部配置多了comments, copyright, top, tags, categories，不如直接修改默认post模板，省的复制粘贴了。</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -841,7 +848,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count"> |  Word Count: 49.7k words</span>
+  <span class="post-count"> |  Word Count: 49.9k words</span>
 </div>
 
         
