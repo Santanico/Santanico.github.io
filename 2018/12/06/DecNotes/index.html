@@ -81,22 +81,22 @@
 
 
 
-<meta name="description" content="Intent-Based Networking, IBN(a.k.a. Intent-Driven Networking, Intent-BasedOrchestration/Management, [Intuitive Network, Self-Driving Network]) 意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所">
+<meta name="description" content="Intent-Based Networking, IBN(a.k.a. Intent-Driven Networking, Intent-Based Orchestration/Management, [Intuitive Network, Self-Driving Network])意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所">
 <meta name="keywords" content="大四">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IBN初探">
+<meta property="og:title" content="IBN:傻瓜式网络配置">
 <meta property="og:url" content="http://Santanico.github.io/2018/12/06/DecNotes/index.html">
 <meta property="og:site_name" content="Xueying&#39;s Node">
-<meta property="og:description" content="Intent-Based Networking, IBN(a.k.a. Intent-Driven Networking, Intent-BasedOrchestration/Management, [Intuitive Network, Self-Driving Network]) 意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所">
+<meta property="og:description" content="Intent-Based Networking, IBN(a.k.a. Intent-Driven Networking, Intent-Based Orchestration/Management, [Intuitive Network, Self-Driving Network])意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://santanico.github.io/2018/12/06/DecNotes/example.PNG">
 <meta property="og:image" content="http://santanico.github.io/2018/12/06/DecNotes/comparison.PNG">
 <meta property="og:image" content="http://santanico.github.io/2018/12/06/DecNotes/lifecycle.PNG">
 <meta property="og:image" content="http://santanico.github.io/2018/12/06/DecNotes/图片1.png">
-<meta property="og:updated_time" content="2018-12-06T05:49:20.758Z">
+<meta property="og:updated_time" content="2018-12-06T05:54:00.343Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IBN初探">
-<meta name="twitter:description" content="Intent-Based Networking, IBN(a.k.a. Intent-Driven Networking, Intent-BasedOrchestration/Management, [Intuitive Network, Self-Driving Network]) 意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所">
+<meta name="twitter:title" content="IBN:傻瓜式网络配置">
+<meta name="twitter:description" content="Intent-Based Networking, IBN(a.k.a. Intent-Driven Networking, Intent-Based Orchestration/Management, [Intuitive Network, Self-Driving Network])意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所">
 <meta name="twitter:image" content="http://santanico.github.io/2018/12/06/DecNotes/example.PNG">
 
 
@@ -133,7 +133,7 @@
 
 
 
-  <title>IBN初探 | Xueying's Node</title>
+  <title>IBN:傻瓜式网络配置 | Xueying's Node</title>
   
 
 
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">IBN初探</h1>
+          <h1 class="post-title" itemprop="name headline">IBN:傻瓜式网络配置</h1>
         
 
         <div class="post-meta">
@@ -393,7 +393,7 @@
 
           
           
-             <span id="/2018/12/06/DecNotes/" class="leancloud_visitors" data-flag-title="IBN初探">
+             <span id="/2018/12/06/DecNotes/" class="leancloud_visitors" data-flag-title="IBN:傻瓜式网络配置">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -455,8 +455,7 @@
       
 
       
-        <h4 id="Intent-Based-Networking-IBN"><a href="#Intent-Based-Networking-IBN" class="headerlink" title="Intent-Based Networking, IBN"></a>Intent-Based Networking, IBN</h4><p>(a.k.a. Intent-Driven Networking, Intent-Based<br>Orchestration/Management, [Intuitive Network, Self-Driving Network])</p>
-<p>意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所以一路走来有了很多名字，可是直到今天依旧没多少人熟悉IBN的概念，我们今天就来聊聊这个比较超前的话题。</p>
+        <h4 id="Intent-Based-Networking-IBN"><a href="#Intent-Based-Networking-IBN" class="headerlink" title="Intent-Based Networking, IBN"></a>Intent-Based Networking, IBN</h4><p>(a.k.a. Intent-Driven Networking, Intent-Based Orchestration/Management, [Intuitive Network, Self-Driving Network])<br>意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所以一路走来有了很多名字，可是直到今天依旧没多少人熟悉IBN的概念，我们今天就来聊聊这个比较超前的话题。</p>
 <a id="more"></a>
 <h4 id="什么是IBN"><a href="#什么是IBN" class="headerlink" title="什么是IBN"></a>什么是IBN</h4><blockquote>
 <p>“In the so-called “Intent” model, intelligent software (such as an SDN Controller) determines how to translate the Intent into an infrastructure-specific “prescription” that causes the network to behave in the desired manner.” </p>
@@ -480,14 +479,10 @@
 <li><strong>自发的优化补救(Self-remediation)：</strong>网络的状态时时变化，执行时的状态与验证时的状态可能存在不一致，此时IBNS会主动地根据期望的状态对策略进行优化补救 ，这一过程中不需要人类介入。</li>
 <li><strong>实时反馈 (Post-Assessment)：</strong>将结果返回至意图的发起者处，这个结果可以是意图已经达成，或者是意图需要被重新定义。反馈仅在需要人类介入时才触发。</li>
 </ol>
-<h4 id="IBN-Requirements"><a href="#IBN-Requirements" class="headerlink" title="IBN Requirements"></a>IBN Requirements</h4><p><strong>网络要有全面、精细、实时状态</strong></p>
-<p>网络的状态就是指网络中各个网元上的状态信息以及它们之间的流量状态信息。对网络状态的验证是解释用户业务意图合理性的决定性指标也是将其转化成实际策略并验证生效的唯一途径。获取网络状态，可以解决网络配置不能大规模并发的现状，极大地提高了效率。同时，为了更好地验证意图并产生对应的策略，获取的网络状态需要是全面的、精细的、实时的。</p>
-<p><strong>对意图的转译和验证</strong></p>
-<p>意图是IBN体系中的核心驱动力，IBN将对于意图的理解穿插到网络的生命周期中，由基于算法的意图模型去分解、转译意图；在意图被下发至网络基础设施之前，必须确认其可行性。这项操作基于对网络全息状态的掌握，在下发前后持续进行验证，目的是为了保证原始的业务意图能被不折不扣地达成。</p>
-<p><strong>网络的自动化</strong></p>
-<p>IBNS进一步实现了网络生命周期管理中的设计、配置、变更和运维等过程的自动化，同时实现了闭环，让网络成为一个可自动控制，自动运转的系统。</p>
-<p><strong>形成持续的闭环</strong></p>
-<p>从一条意图被录入IBNS开始，系统的各个流程就需要维持一个闭合的环路。唯有持续闭环的系统才可以保证意图的有效性，才可以确保意图不会被突发的网络状况干扰，半途而废。</p>
+<h4 id="IBN-Requirements"><a href="#IBN-Requirements" class="headerlink" title="IBN Requirements"></a>IBN Requirements</h4><p><strong>网络要有全面、精细、实时状态</strong><br>网络的状态就是指网络中各个网元上的状态信息以及它们之间的流量状态信息。对网络状态的验证是解释用户业务意图合理性的决定性指标也是将其转化成实际策略并验证生效的唯一途径。获取网络状态，可以解决网络配置不能大规模并发的现状，极大地提高了效率。同时，为了更好地验证意图并产生对应的策略，获取的网络状态需要是全面的、精细的、实时的。</p>
+<p><strong>对意图的转译和验证</strong><br>意图是IBN体系中的核心驱动力，IBN将对于意图的理解穿插到网络的生命周期中，由基于算法的意图模型去分解、转译意图；在意图被下发至网络基础设施之前，必须确认其可行性。这项操作基于对网络全息状态的掌握，在下发前后持续进行验证，目的是为了保证原始的业务意图能被不折不扣地达成。</p>
+<p><strong>网络的自动化</strong><br>IBNS进一步实现了网络生命周期管理中的设计、配置、变更和运维等过程的自动化，同时实现了闭环，让网络成为一个可自动控制，自动运转的系统。</p>
+<p><strong>形成持续的闭环</strong><br>从一条意图被录入IBNS开始，系统的各个流程就需要维持一个闭合的环路。唯有持续闭环的系统才可以保证意图的有效性，才可以确保意图不会被突发的网络状况干扰，半途而废。</p>
 <h4 id="IBN-versus-SDN"><a href="#IBN-versus-SDN" class="headerlink" title="IBN versus SDN"></a>IBN versus SDN</h4><p>SDN(Software-defined Networking)即软件定义网络，业内对于SDN的界定非常的清晰：</p>
 <ol>
 <li>将网络的控制平面与转发平面分离，并存在独立的控制器</li>
@@ -505,9 +500,7 @@
 <h4 id="Chanlleges-of-IBN"><a href="#Chanlleges-of-IBN" class="headerlink" title="Chanlleges of IBN"></a>Chanlleges of IBN</h4><p>从用户角度分析，IBN正式的商业化技术应用是从2016年开始，因此面临的第一个挑战就是时至今日仅有极少数人真正熟悉这个概念。其次，在IT这个普遍存在脆弱性 、技术周期相对较长的行业内进行新技术的尝试将会面临极大阻力：高层管理者对于风险的敏感，采购尚不存在针对IBN的独立预算，市场尚无广泛反响和经验可借鉴等等，都会制约IBN技术的进一步发展。</p>
 <p>从生态角度分析，在IBNS的运行过程中，各个组件和设备大量地依赖相互之间的API/CLI对接，目前统一的标准规范尚未形成。然而这是一个存在利润冲突的区域，目前厂商各自存在私有的API/CLI，以此建立的壁垒隔绝对其他IBN组件的支持，这会从很大程度上抑制异构组件的IBN闭环的成型。</p>
 <div class="note info"><p>Reference:</p>
-<p><a href="https://www.yunshan.net/blog/?p=733" target="_blank" rel="noopener">IBN中国十问</a></p>
-<p><a href="https://www.sdxcentral.com/articles/contributed/network-intent-summit-perspective-david-lenrow/2015/02/" target="_blank" rel="noopener">Intent: Don’t Tell Me What to Do! (Tell Me What You Want) </a></p>
-<p><a href="https://www.sdxcentral.com/articles/contributed/network-intent-summit-perspective-marc-cohn/2015/02/" target="_blank" rel="noopener">The Intent for Intent: Notes from the Recent Intent-Based Summit</a></p></div> 
+<p><a href="https://www.yunshan.net/blog/?p=733" target="_blank" rel="noopener">IBN中国十问</a><br><a href="https://www.sdxcentral.com/articles/contributed/network-intent-summit-perspective-david-lenrow/2015/02/" target="_blank" rel="noopener">Intent: Don’t Tell Me What to Do! (Tell Me What You Want) </a><br><a href="https://www.sdxcentral.com/articles/contributed/network-intent-summit-perspective-marc-cohn/2015/02/" target="_blank" rel="noopener">The Intent for Intent: Notes from the Recent Intent-Based Summit</a></p></div> 
       
     </div>
     
@@ -529,7 +522,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://Santanico.github.io/2018/12/06/DecNotes/" title="IBN初探">http://Santanico.github.io/2018/12/06/DecNotes/</a>
+    <a href="http://Santanico.github.io/2018/12/06/DecNotes/" title="IBN:傻瓜式网络配置">http://Santanico.github.io/2018/12/06/DecNotes/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>

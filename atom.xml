@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-12-06T05:49:20.758Z</updated>
+  <updated>2018-12-06T05:54:00.343Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -17,16 +17,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>IBN初探</title>
+    <title>IBN:傻瓜式网络配置</title>
     <link href="http://Santanico.github.io/2018/12/06/DecNotes/"/>
     <id>http://Santanico.github.io/2018/12/06/DecNotes/</id>
     <published>2018-12-06T03:45:06.000Z</published>
-    <updated>2018-12-06T05:49:20.758Z</updated>
+    <updated>2018-12-06T05:54:00.343Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;Intent-Based-Networking-IBN&quot;&gt;&lt;a href=&quot;#Intent-Based-Networking-IBN&quot; class=&quot;headerlink&quot; title=&quot;Intent-Based Networking, IBN&quot;&gt;&lt;/a&gt;Intent-Based Networking, IBN&lt;/h4&gt;&lt;p&gt;(a.k.a. Intent-Driven Networking, Intent-Based&lt;br&gt;Orchestration/Management, [Intuitive Network, Self-Driving Network])&lt;/p&gt;
-&lt;p&gt;意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所以一路走来有了很多名字，可是直到今天依旧没多少人熟悉IBN的概念，我们今天就来聊聊这个比较超前的话题。&lt;/p&gt;
+      &lt;h4 id=&quot;Intent-Based-Networking-IBN&quot;&gt;&lt;a href=&quot;#Intent-Based-Networking-IBN&quot; class=&quot;headerlink&quot; title=&quot;Intent-Based Networking, IBN&quot;&gt;&lt;/a&gt;Intent-Based Networking, IBN&lt;/h4&gt;&lt;p&gt;(a.k.a. Intent-Driven Networking, Intent-Based Orchestration/Management, [Intuitive Network, Self-Driving Network])&lt;br&gt;意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所以一路走来有了很多名字，可是直到今天依旧没多少人熟悉IBN的概念，我们今天就来聊聊这个比较超前的话题。&lt;/p&gt;
     
     </summary>
     
