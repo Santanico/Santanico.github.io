@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Santanico.github.io/"/>
-  <updated>2018-10-25T05:34:06.066Z</updated>
+  <updated>2018-12-06T05:49:20.758Z</updated>
   <id>http://Santanico.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IBN初探</title>
+    <link href="http://Santanico.github.io/2018/12/06/DecNotes/"/>
+    <id>http://Santanico.github.io/2018/12/06/DecNotes/</id>
+    <published>2018-12-06T03:45:06.000Z</published>
+    <updated>2018-12-06T05:49:20.758Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;Intent-Based-Networking-IBN&quot;&gt;&lt;a href=&quot;#Intent-Based-Networking-IBN&quot; class=&quot;headerlink&quot; title=&quot;Intent-Based Networking, IBN&quot;&gt;&lt;/a&gt;Intent-Based Networking, IBN&lt;/h4&gt;&lt;p&gt;(a.k.a. Intent-Driven Networking, Intent-Based&lt;br&gt;Orchestration/Management, [Intuitive Network, Self-Driving Network])&lt;/p&gt;
+&lt;p&gt;意图驱动网络这个概念其实从2015年就陆续有人开始有这个想法，但是各个机构之间信息不互通，或者说想法不完全一致，所以一路走来有了很多名字，可是直到今天依旧没多少人熟悉IBN的概念，我们今天就来聊聊这个比较超前的话题。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
+    
+    
+      <category term="大四" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E5%9B%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>SHA-1:大坨变小坨的神秘哈希算法</title>
@@ -436,31 +457,6 @@
     
       &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
 &lt;h3 id=&quot;目标：线性表在链式存储结构的实现。&quot;&gt;&lt;a href=&quot;#目标：线性表在链式存储结构的实现。&quot; class=&quot;headerlink&quot; title=&quot;目标：线性表在链式存储结构的实现。&quot;&gt;&lt;/a&gt;目标：线性表在链式存储结构的实现。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;已知某线性表中的数据元素由三个数据项（学号、姓名、成绩）组成，且数据元素按照学号递增有序，表长为n。选择带头结点的单链表作为存储结构。设计并实现如下算法：&lt;br&gt;（1） n个数据元素作为初始数据，置入相应的存储结构中。(测试时至少10个数据元素），输出线性表中各数据元素。&lt;br&gt;（2）将新的数据元素x插入到线性表的适当位置上，以保持该表的有序性，输出线性表中各数据元素。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://Santanico.github.io/categories/Coding/"/>
-    
-    
-      <category term="C语言" scheme="http://Santanico.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="大二" scheme="http://Santanico.github.io/tags/%E5%A4%A7%E4%BA%8C/"/>
-    
-      <category term="数据结构" scheme="http://Santanico.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大二下 数据结构（二）</title>
-    <link href="http://Santanico.github.io/2018/02/06/%E5%A4%A7%E4%BA%8C%E4%B8%8B%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>http://Santanico.github.io/2018/02/06/大二下 数据结构（二）/</id>
-    <published>2018-02-06T13:10:47.000Z</published>
-    <updated>2018-05-06T06:20:33.830Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;适用于电商专业大二年级下学期，数据结构专业选修课，不是物联网同学大二上的数据结构哦。&lt;br&gt;年代久远，仅供参考。&lt;/p&gt;
-&lt;h3 id=&quot;目标：线性表在顺序存储结构的实现。&quot;&gt;&lt;a href=&quot;#目标：线性表在顺序存储结构的实现。&quot; class=&quot;headerlink&quot; title=&quot;目标：线性表在顺序存储结构的实现。&quot;&gt;&lt;/a&gt;目标：线性表在顺序存储结构的实现。&lt;/h3&gt;&lt;h3 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h3&gt;&lt;p&gt;已知某线性表中的数据元素由三个数据项（学号、姓名、成绩）组成，且数据元素按照学号递增有序，表长为n。选择顺序表 作为存储结构。设计并实现如下算法：&lt;br&gt;（1）n个数据元素作为初始数据，置入相应的存储结构中。(测试时至少10个数据元素），输出线性表中各数据元素。&lt;br&gt;（2）将新的数据元素x插入到线性表的适当位置上，以保持该表的有序性，输出线性表中各数据元素。&lt;br&gt;
     
     </summary>
     
